@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
+
+html,
+body {
+  background-color: #182249;
+  padding: 0;
+  margin: 0;
+  font-family: "Julius Sans One", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+p {
+  color: #BEC0CB;
+  font-size: 17px;
+  font-family: 'Raleway', sans-serif;
+  margin-block-start: 0.5em;
+  margin-block-end: 2.0em;
+}
+
+h1 {
+  color: #FFA91D;
+  font-size: 40px;
+  font-family: "Julius Sans One", sans-serif;
+  font-weight: bold;
+  letter-spacing: 0.05rem;
+}
+
+h2 {
+  color: #A2773A;
+  font-size: 24px;
+  font-family: 'Julius Sans One', sans-serif;
+  font-weight: lighter;
+}
+
+a, li {
+  color: #BEC0CB;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #A2773A;
+}
+
+
+
