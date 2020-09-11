@@ -16,26 +16,26 @@ export default function Layout({ children }) {
       </Head>
       <header className={styles.navbar}>
         <Link href="/">
-            <a className={styles.link}>Home</a>
+          <a className={styles.link}>Home</a>
         </Link>
         <Link href="/announcements">
-            <a className={styles.link}>Announcements</a>
+          <a className={styles.link}>Announcements</a>
         </Link>
         <Link href="/projects">
-            <a className={styles.link}>Projects</a>
+          <a className={styles.link}>Projects</a>
         </Link>
         <Link href="/workshops">
-            <a className={styles.link}>Workshops</a>
+          <a className={styles.link}>Workshops</a>
         </Link>
         <Link href="/members">
-            <a className={styles.link}>Members</a>
+          <a className={styles.link}>Members</a>
         </Link>
       </header>
 
       <main className={styles.main}>{children}</main>
 
       <footer>
-        <p>Email us: blabla@osai-web.com</p>
+        <p>Email us: osai-exec@lists.illinois.edu</p>
       </footer>
     </div>
   )
