@@ -6,11 +6,13 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ### To Start:
 
+**First, install yarn on your computer.**
+
 ```
-# Clone this repo and cd into it
+# Clone this repo, then
 cd website-reboot
-npm run dev
-# or
+cd website-reboot
+yarn # or yarn install
 yarn dev
 # Now it runs in http://localhost:3000
 ```
