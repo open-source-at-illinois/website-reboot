@@ -11,6 +11,10 @@
     @media only screen and (max-width: 750px) {
         height: auto;
     }
+
+    @media only screen and (max-height: 650px) {
+        height: auto;
+    }
 }
 
 .navbar {
@@ -18,7 +22,11 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    width: 100%;
+    width: 95%;
+
+    @media only screen and (max-width: 600px) {
+        display: none;
+    }
 }
 
 .link {
@@ -35,4 +43,13 @@
 
 .main {
     display: block;
+}
+
+.fa_bars {
+    color: #BEC0CB;
+    align-self: start;
+    margin-top: 15px;
+    @media only screen and (min-width: 600px) {
+        display: none;
+    }
 }
