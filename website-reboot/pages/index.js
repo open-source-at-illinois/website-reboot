@@ -10,7 +10,7 @@ export default function Home() {
       </Head>
 
       <section className={styles.container}>
-        <img src="/images/Logo.png" className={styles.image}/>
+        <img src="./images/Logo.png" className={styles.image}/>
 
         <section className={styles.homeText}>
           <h1>WELCOME</h1>
