@@ -2,15 +2,21 @@
   "name": "website-reboot",
   "version": "0.1.0",
   "private": true,
+  "homepage":"http://open-source-at-illinois.github.io/website-reboot.git",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start -p $PORT"
+    "start": "next start -p $PORT",
+    "export": "next export",
+    "deploy": "rm -rf node_modules/.cache && rimraf out && next build && next export && touch out/.nojekyll && gh-pages -d out -t true"
   },
   "dependencies": {
     "next": "9.5.3",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "sass": "^1.26.10"
+  },
+  "devDependencies": {
+    "gh-pages": "^3.1.0"
   }
 }

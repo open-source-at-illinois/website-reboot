@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import styles from '../styles/home.module.scss'
+import styles from '../styles/Home.module.scss'
 import Layout, { siteTitle } from '../components/layout'
 
 export default function Home() {
@@ -10,7 +10,7 @@ export default function Home() {
       </Head>
 
       <section className={styles.container}>
-        <img src="/images/Logo.png" className={styles.image}/>
+        <img src="./images/Logo.png" className={styles.image}/>
 
         <section className={styles.homeText}>
           <h1>WELCOME</h1>
