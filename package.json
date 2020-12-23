@@ -2,7 +2,7 @@
   "name": "website-reboot",
   "version": "0.1.0",
   "private": true,
-  "homepage":"http://open-source-at-illinois.github.io/website-reboot.git",
+  "homepage": "http://open-source-at-illinois.github.io/website-reboot.git",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -17,6 +17,6 @@
     "sass": "^1.26.10"
   },
   "devDependencies": {
-    "gh-pages": "^3.1.0"
+    "gh-pages": "^3.0.0"
   }
 }

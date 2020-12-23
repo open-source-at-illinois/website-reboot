@@ -1,0 +1,9 @@
+---
+deployment:
+  tasks:
+    - echo "Running deployment:" >>$HOME/log.txt 2>&1
+    - date >>$HOME/log.txt 2>&1
+    - source $HOME/deploy/frontend.cfg >>$HOME/log.txt 2>&1
+    - git checkout gh-pages >>$HOME/log.txt 2>&1
+    - rm -rf $LIVE_DEPLOY_DEST_MAIN/*
+    - /bin/cp -r ./* $LIVE_DEPLOY_DEST_MAIN >>$HOME/log.txt 2>&1
