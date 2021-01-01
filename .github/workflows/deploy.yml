@@ -1,20 +1,24 @@
 name: Deploy to cPanel action
 
-on: push
-
+on:
+  push:
+    branches:
+      - main
+      - staging
 jobs:
   deploy:
     name: Deploy to cPanel
     runs-on: ubuntu-latest
     env:
-      CPANEL_PUSH_REMOTE: ${{ secrets.CPANEL_PUSH_REMOTE }}
-      CPANEL_SSH_DEST: ${{ secrets.CPANEL_SSH_DEST }}
+      CPANEL_DEPLOY_ROOT: ${{ secrets.CPANEL_FRONTEND_DEPLOY_ROOT }}
+      CPANEL_HOST: ${{ secrets.CPANEL_HOST }}
+      CPANEL_USER: ${{ secrets.CPANEL_USER }}
     steps:
       - uses: actions/checkout@v2
       - uses: webfactory/ssh-agent@v0.4.1
         with:
           ssh-private-key: ${{ secrets.CPANEL_OSAIWEBSITE_PRIVATE }}
-      - run: ssh-keyscan $CPANEL_SSH_DEST >> $HOME/.ssh/known_hosts
+      - run: ssh-keyscan $CPANEL_HOST >> $HOME/.ssh/known_hosts
       - uses: borales/actions-yarn@v2.0.0
         with:
           cmd: install
@@ -30,5 +34,5 @@ jobs:
       - run: |
           npm install -g gh-pages@3.0.0
           sudo cp ./.cpanel.yml ./out/.cpanel.yml
-          git remote add cpanel "$CPANEL_PUSH_REMOTE"
+          git remote add cpanel "${CPANEL_USER}@${CPANEL_HOST}:${CPANEL_DEPLOY_ROOT}/$(git rev-parse --abbrev-ref HEAD)/gh-pages"
           gh-pages --dotfiles --dist out --remote cpanel --user "GitHub Action <action@github.com>"
