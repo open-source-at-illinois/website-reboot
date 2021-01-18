@@ -1,0 +1,23 @@
+.announcementsContainer{
+    // background: blue;
+    padding-left:100px;
+    padding-right:100px;
+}
+.messageModal{
+    border-radius: 10px;
+    background:#E4E5E8;
+    padding: 20px;
+    padding-top:1px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 20px;
+    p{
+        color:black;
+        margin-top:0px;
+    }
+    #messageTime{
+        font-size: 12px;
+        color: #905F19;
+        margin-top:10px;
+    }
+}

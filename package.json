@@ -11,6 +11,8 @@
     "deploy": "rm -rf node_modules/.cache && rimraf out && next build && next export && touch out/.nojekyll && gh-pages -d out -t true"
   },
   "dependencies": {
+    "axios": "^0.21.1",
+    "date-and-time": "^0.14.2",
     "next": "9.5.3",
     "react": "16.13.1",
     "react-dom": "16.13.1",
