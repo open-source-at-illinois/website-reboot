@@ -3,7 +3,6 @@ import Layout from '../components/layout'
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 import styles from '../styles/Announcements.module.scss';
-import date from 'date-and-time';
 
 export default function Announcements() {
     const [messages, setMessages] = useState([]);
@@ -21,9 +20,7 @@ export default function Announcements() {
 
     let messageMapper = messages.map((message)=>{
             let currDate = Date.parse(message.created);
-            const d = new Date(currDate);
-            // const pattern = date.compile('ddd, MMM DD YYYY');
-            // date.format(d, pattern);    
+            const d = new Date(currDate); 
             return(<div className={styles.messageModal}>
                 <p id={styles.messageTime}>{d.toString()}</p>
                 <p>{message.content}</p>
