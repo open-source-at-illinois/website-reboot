@@ -3,6 +3,8 @@ import Layout from '../components/layout'
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 import styles from '../styles/Announcements.module.scss';
+import Loader from 'react-loader-spinner'
+
 
 export default function Announcements() {
     const [messages, setMessages] = useState([]);
@@ -27,6 +29,19 @@ export default function Announcements() {
             </div>)
         }   
     ) 
+
+    if(messages.length==0){
+        return (
+            <Layout>
+                <Head>
+                    <title>OSAI Announcements</title>
+                </Head>
+                <div className={styles.loaderContainer}>
+                    <Loader type="BallTriangle" color="#FFA91D" height={120} width={120} />
+                </div>
+            </Layout>
+        )  
+    }
 
     return (
         <Layout>

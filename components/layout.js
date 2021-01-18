@@ -39,7 +39,7 @@ export default function Layout({ children }) {
       
       <main className={styles.main}>{children}</main>
 
-      <footer>
+      <footer className={styles.footerContainer}>
         <p>Email us: osai-exec@lists.illinois.edu</p>
       </footer>
     </div>

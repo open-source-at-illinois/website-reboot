@@ -19,9 +19,9 @@ export default function Home() {
             We are an RSO registered with UIUC dedicated to developing open-source 
             software to promote a healthy and free internet. 
           </p>
-          <h2>ANNOUNCEMENTS</h2>
+          <h2>MEETINGS</h2>
           <p>
-            First general meeting this Saturday (2020.9.5)!
+          We hold general meetings on Saturdays at 12:30PM CT. We also host project meetings and educational workshops to learn more about open-source!
           </p>
           <h2>DISCORD</h2>
           <p>
