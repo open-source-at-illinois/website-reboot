@@ -11,7 +11,7 @@ export default function Announcements() {
     useEffect(() => {
         const fetchData = async () => {
           const result = await axios(
-            'http://localhost:6464/messages?count=7',
+            'https://api.opensourceatillinois.com/messages?count=6',
           );
           setMessages(result.data);
         };
