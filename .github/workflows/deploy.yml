@@ -3,7 +3,7 @@ name: Deploy to cPanel action
 on:
   push:
     branches:
-      - main
+      - master
       - staging
 jobs:
   deploy:
