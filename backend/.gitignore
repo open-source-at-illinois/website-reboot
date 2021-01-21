@@ -1,2 +1,4 @@
 node_modules
 .env
+# cpanel
+/tmp/restart.txt
