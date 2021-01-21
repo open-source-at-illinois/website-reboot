@@ -1,28 +1,19 @@
 {
   "name": "website-reboot",
-  "version": "0.1.0",
-  "private": true,
-  "homepage": "http://open-source-at-illinois.github.io/website-reboot.git",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "dev": "node server.js",
-    "build": "next build",
-    "start": "cross-env NODE_ENV=production node server.js",
-    "export": "next export",
-    "deploy": "rm -rf node_modules/.cache && rimraf out && next build && next export && touch out/.nojekyll && gh-pages -d out -t true"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "(cd backend && npm install); (cd frontend && npm install);"
   },
-  "dependencies": {
-    "axios": "^0.21.1",
-    "date-and-time": "^0.14.2",
-    "dotenv": "^8.2.0",
-    "express": "^4.17.1",
-    "next": "9.5.3",
-    "react": "16.13.1",
-    "react-countdown": "^2.3.1",
-    "react-dom": "16.13.1",
-    "react-loader-spinner": "^3.1.14",
-    "sass": "^1.26.10"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/open-source-at-illinois/website-reboot.git"
   },
-  "devDependencies": {
-    "gh-pages": "^3.0.0"
-  }
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/open-source-at-illinois/website-reboot/issues"
+  },
+  "homepage": "https://github.com/open-source-at-illinois/website-reboot#readme"
 }
