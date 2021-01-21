@@ -15,6 +15,7 @@
     "date-and-time": "^0.14.2",
     "next": "9.5.3",
     "react": "16.13.1",
+    "react-countdown": "^2.3.1",
     "react-dom": "16.13.1",
     "react-loader-spinner": "^3.1.14",
     "sass": "^1.26.10"

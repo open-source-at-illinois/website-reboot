@@ -1,24 +1,33 @@
-import Head from 'next/head'
-import Layout from '../components/layout'
+import Head from 'next/head';
+import Layout from '../components/layout';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 import styles from '../styles/Announcements.module.scss';
-import Loader from 'react-loader-spinner'
-
+import Loader from 'react-loader-spinner';
+import Countdown from 'react-countdown';
+import Router from 'next/router'
 
 export default function Announcements() {
     const [messages, setMessages] = useState([]);
+    const [loading, setLoading] = useState(true);
+    const [reload, setReload] = useState(false);
 
     useEffect(() => {
-        const fetchData = async () => {
-          const result = await axios(
-            'https://api.opensourceatillinois.com/messages?count=6',
-          );
-          setMessages(result.data);
-        };
-
         fetchData();
-      }, []);
+    }, [reload]);
+    
+    const fetchData = async () => {
+        console.log('fetching started');
+        try{
+            const result = await axios(
+                'https://api.opensourceatillinois.com/messages?count=6',
+            );
+            setMessages(result.data);
+            setLoading(false);
+        } catch (err) {
+            console.log(err);
+        }
+    };
 
     let messageMapper = messages.map((message)=>{
             let currDate = Date.parse(message.created);
@@ -30,14 +39,36 @@ export default function Announcements() {
         }   
     ) 
 
-    if(messages.length==0){
+    const Completionist = () => 
+        <div className={styles.loaderContainer}>
+            <p>There seems to be a problem!</p>
+            {/* <Link href="/announcements"> */}
+                <a onClick={()=>{Router.reload(window.location.pathname)}}>Reload</a>
+            {/* </Link> */}
+        </div>;
+ 
+    const renderer = ({ hours, minutes, seconds, completed }) => {
+    if (completed) {
+        return <Completionist />;
+    } else {
+        return (
+            <div className={styles.loaderContainer}>
+                <Loader type="BallTriangle" color="#FFA91D" height={120} width={120} />
+                <p>Reload in {seconds}</p>
+            </div>
+        );
+    }
+    };
+
+    if(loading){
+        console.log('render triggered');
         return (
             <Layout>
                 <Head>
                     <title>OSAI Announcements</title>
                 </Head>
                 <div className={styles.loaderContainer}>
-                    <Loader type="BallTriangle" color="#FFA91D" height={120} width={120} />
+                    <Countdown date={Date.now() + 5000} renderer={renderer}/>
                 </div>
             </Layout>
         )  
