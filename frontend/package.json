@@ -7,11 +7,12 @@
     "dev": "node server.js",
     "build": "next build",
     "start": "cross-env NODE_ENV=production node server.js",
-    "export": "next export",
-    "deploy": "rm -rf node_modules/.cache && rimraf out && next build && next export && touch out/.nojekyll && gh-pages -d out -t true"
+    "export": "next export"
   },
   "dependencies": {
     "axios": "^0.21.1",
+    "check-node-version": "^4.0.3",
+    "cross-env": "^7.0.3",
     "date-and-time": "^0.14.2",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",

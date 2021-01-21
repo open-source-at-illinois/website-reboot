@@ -1,5 +1,22 @@
-// Not necessary in cPanel, .env is not used.
+require('check-node-version')(
+  { node: "10.22" },
+  (err, result) => {
+    if (err) {
+      console.log("An error was encountered while checking the node version:")
+      console.log(err)
+      return
+    }
+    if (!result.isSatisfied) {
+      console.log('*****************WARNING*****************')
+      console.log('You have a different node version from what is on cPanel!')
+      console.log('(Expected: 10.22.0, got ' + result.versions['node'].version + ')')
+      console.log('Consider using a tool like nvm to test with the proper version.')
+      console.log('*****************************************')
+    }
+  }
+)
 
+// Not necessary in cPanel, .env is not used.
 if (process.env.NODE_ENV !== 'production') {
     require('dotenv').config();
 }

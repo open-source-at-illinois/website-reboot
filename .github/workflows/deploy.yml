@@ -19,20 +19,6 @@ jobs:
         with:
           ssh-private-key: ${{ secrets.CPANEL_OSAIWEBSITE_PRIVATE }}
       - run: ssh-keyscan $CPANEL_HOST >> $HOME/.ssh/known_hosts
-      - uses: borales/actions-yarn@v2.0.0
-        with:
-          cmd: install
-      - uses: borales/actions-yarn@v2.0.0
-        with:
-          cmd: build
-      - uses: borales/actions-yarn@v2.0.0
-        with:
-          cmd: export
-      - uses: actions/setup-node@v2
-        with:
-          node-version: '14'
       - run: |
-          npm install -g gh-pages@3.0.0
-          sudo cp ./.cpanel.yml ./out/.cpanel.yml
-          git remote add cpanel "${CPANEL_USER}@${CPANEL_HOST}:${CPANEL_DEPLOY_ROOT}/$(git rev-parse --abbrev-ref HEAD)/gh-pages"
-          gh-pages --dotfiles --dist out --remote cpanel --user "GitHub Action <action@github.com>"
+          git remote add cpanel "${CPANEL_USER}@${CPANEL_HOST}:${CPANEL_DEPLOY_ROOT}/$(git rev-parse --abbrev-ref HEAD)/"
+          git push -f cpanel
