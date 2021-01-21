@@ -1,11 +1,10 @@
 require('dotenv').config();
-const { SERVER_PORT, DISCORD_TOKEN, CHANNEL_ID, NODE_ENV } = process.env;
+const { SERVER_PORT, NODE_ENV } = process.env;
 
 const express = require('express')
 const next = require('next')
-const discord = require('discord.js');
 
-const port = SERVER_PORT;
+const port = SERVER_PORT || 3000;
 const dev = NODE_ENV !== 'production';
 const app = next({ dev });
 const handle = app.getRequestHandler();
@@ -13,28 +12,7 @@ const handle = app.getRequestHandler();
 app.prepare().then(() => {
   const server = express();
 
-  const discordBot = new discord.Client();
   server.use(express.json());
-
-  discordBot.once('ready', () => {
-    console.log('Discord bot is ready!')
-  })
-
-  discordBot.login(DISCORD_TOKEN);
-
-  server.get('/messages', (req, res, nxt) => {
-    console.log('GET @ messages')
-    const channel = discordBot.channels.get(CHANNEL_ID);
-    channel.fetchMessages({ limit: req.query.count || 3 })
-        .then(messages => {
-            res.send(messages.map(m => { 
-                return {
-                    created: new Date(m.createdTimestamp).toISOString(), 
-                    content: m.content
-                }
-            }))
-        })
-  })
 
   server.get('/announcements', (req, res) => {
     return app.render(req, res, '/announcements', req.query)
