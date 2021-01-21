@@ -1,7 +1,8 @@
 ---
 deployment:
   tasks:
-    - source # necessary environments
+    - source ../frontend
     - touch ./frontend/tmp/restart.txt
     - source # necessary environment
     - touch ./backend/tmp/restart.txt
+
