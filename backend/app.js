@@ -4,7 +4,7 @@ if (process.env.NODE_ENV !== 'production') {
     require('dotenv').config();
 }
 
-const { SERVER_PORT = 3000, DISCORD_TOKEN, CHANNEL_ID } = process.env;
+const { SERVER_PORT = 3001, DISCORD_TOKEN, CHANNEL_ID } = process.env;
 
 const cors = require('cors');
 const express = require('express')
