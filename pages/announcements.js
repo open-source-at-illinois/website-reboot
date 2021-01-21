@@ -5,7 +5,7 @@ import axios from 'axios';
 import styles from '../styles/Announcements.module.scss';
 import Loader from 'react-loader-spinner';
 import Countdown from 'react-countdown';
-import Router from 'next/router'
+import Router from 'next/router';
 
 export default function Announcements() {
     const [messages, setMessages] = useState([]);
@@ -42,9 +42,7 @@ export default function Announcements() {
     const Completionist = () => 
         <div className={styles.loaderContainer}>
             <p>There seems to be a problem!</p>
-            {/* <Link href="/announcements"> */}
-                <a onClick={()=>{Router.reload(window.location.pathname)}}>Reload</a>
-            {/* </Link> */}
+            <a onClick={()=>{Router.reload(window.location.pathname)}}>Reload</a>
         </div>;
  
     const renderer = ({ hours, minutes, seconds, completed }) => {
@@ -61,7 +59,6 @@ export default function Announcements() {
     };
 
     if(loading){
-        console.log('render triggered');
         return (
             <Layout>
                 <Head>
