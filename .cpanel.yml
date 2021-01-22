@@ -1,8 +1,10 @@
 ---
 deployment:
   tasks:
-    - source ../frontend
+    - source ../frontend-master.cfg
+    - (cd frontend && npm install)
     - touch ./frontend/tmp/restart.txt
-    - source # necessary environment
+    - source ../backend-master.cfg
+    - (cd backend && npm install)
     - touch ./backend/tmp/restart.txt
 
