@@ -16,8 +16,8 @@ export default function Home() {
           <h1>WELCOME</h1>
           <h2>ABOUT OPEN SOURCE</h2>
           <p>
-            We are an RSO registered with UIUC dedicated to developing open-source 
-            software to promote a healthy and free internet. 
+            We are an RSO registered with UIUC dedicated to discussing, developing, and utilizing FOSS and open-source 
+            software in order to promote a healthy and free internet. 
           </p>
           <h2>MEETINGS</h2>
           <p>
@@ -25,7 +25,7 @@ export default function Home() {
           </p>
           <h2>DISCORD</h2>
           <p>
-            Come join our active development community on Discord at <a href='https://discord.gg/yumdCzf' target="_blank">https://discord.gg/yumdCzf</a>! We collaborate on projects, post helpful articles on various topics.
+            Come join our active development community on Discord at <a href='https://discord.gg/yumdCzf' target="_blank">https://discord.gg/yumdCzf</a>! We collaborate on projects and discuss all things open-source.
           </p>
         </section>
       </section>
