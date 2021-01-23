@@ -2,4 +2,3 @@
 deployment:
   tasks:
     - /usr/bin/bash ../deploy-master.sh 2>&1 >> ~/log-err.txt
-
