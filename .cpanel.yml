@@ -1,12 +1,12 @@
 ---
 deployment:
   tasks:
-    - source ../frontend-master.cfg
-    - (cd frontend && npm install)
-    - mkdir -p ./frontend/tmp && touch ./frontend/tmp/restart.txt
-    - source ../backend-master.cfg
-    - (cd backend && npm install)
-    - mkdir -p ./backend/tmp && touch ./backend/tmp/restart.txt
+    - source ../frontend-master.cfg 2>&1 >> ~/log.txt
+    - (cd frontend && npm install) 2>&1 >> ~/log.txt
+    - (mkdir -p ./frontend/tmp && touch ./frontend/tmp/restart.txt) 2>&1 >> ~/log.txt
+    - source ../backend-master.cfg 
+    - (cd backend && npm install) 2>&1 >> ~/log.txt
+    - (mkdir -p ./backend/tmp && touch ./backend/tmp/restart.txt) 2>&1 >> ~/log.txt
     - sleep 1
-    - touch ./frontend/tmp/restart.txt
-    - touch ./backend/tmp/restart.txt
+    - (touch ./frontend/tmp/restart.txt) 2>&1 >> ~/log.txt
+    - (touch ./backend/tmp/restart.txt) 2>&1 >> ~/log.txt
