@@ -32,7 +32,7 @@ const discordBot = new discord.Client();
 
 // Configure Bot
 discordBot.once('ready', () => {
-    console.log('Discord bot is ready!')
+    console.log('Discord bot is ready at ' + (new Date()).toLocaleString() + '!')
 })
 
 discordBot.login(DISCORD_TOKEN);
