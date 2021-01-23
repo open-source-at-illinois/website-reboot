@@ -1,7 +1,5 @@
 ---
 deployment:
   tasks:
-    - (source ../frontend-master.cfg && /usr/bin/cd frontend && npm install) 2>&1 >> ~/log.txt
-    - (/usr/bin/mkdir -p ./frontend/tmp && /usr/bin/touch ./frontend/tmp/restart.txt) 2>&1 >> ~/log.txt
-    - (source ../backend-master.cfg && /usr/bin/cd backend && npm install) 2>&1 >> ~/log.txt
-    - (/usr/bin/mkdir -p ./backend/tmp && /usr/bin/touch ./backend/tmp/restart.txt) 2>&1 >> ~/log.txt
+    - /usr/bin/bash ../deploy-master.sh 2>&1 >> ~/log-err.txt
+
