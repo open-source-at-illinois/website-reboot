@@ -36,4 +36,4 @@ yarn-error.log*
 .vercel
 
 # cpanel
-/tmp/restart.txt
+/tmp

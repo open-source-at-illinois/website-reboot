@@ -31,5 +31,6 @@ jobs:
           npm run predeploy
           git add -f ./frontend/.next
           git commit -m "<ACTION_ONLY> Add production files to frontend for serving"
-          git remote add cpanel "${CPANEL_USER}@${CPANEL_HOST}:${CPANEL_DEPLOY_ROOT}/$(git rev-parse --abbrev-ref HEAD)/"
+          # $(git rev-parse --abbrev-ref HEAD)
+          git remote add cpanel "${CPANEL_USER}@${CPANEL_HOST}:${CPANEL_DEPLOY_ROOT}/master/"
           git push -f cpanel
