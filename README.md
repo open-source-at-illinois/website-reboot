@@ -7,5 +7,7 @@ cPanel only has Node version 10.22 and only has `npm`, so it is recommended that
 ### To Start:
 
 1.) Run `npm install` in the root of the repo.
+
 2.) To test the frontend, run `cd frontend && npm run build && npm run dev`.
+
 3.) To test the backend, run `cd backend && npm run dev`.
