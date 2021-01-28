@@ -36,7 +36,7 @@ export default function Announcements() {
             return(<div className={styles.messageModal}>
                 <p id={styles.messageTime}>{d.toString()}</p>
                 <Linkify>
-                    <p>{message.content}</p>
+                    {message.content.split("\n").map(msg => <p>{msg}</p>)}
                 </Linkify>
             </div>)
         }   
