@@ -6,6 +6,7 @@ import styles from '../styles/Announcements.module.scss';
 import Loader from 'react-loader-spinner';
 import Countdown from 'react-countdown';
 import Router from 'next/router';
+import Linkify from 'react-linkify'
 
 export default function Announcements() {
     const [messages, setMessages] = useState([]);
@@ -34,7 +35,9 @@ export default function Announcements() {
             const d = new Date(currDate); 
             return(<div className={styles.messageModal}>
                 <p id={styles.messageTime}>{d.toString()}</p>
-                <p>{message.content}</p>
+                <Linkify>
+                    <p>{message.content}</p>
+                </Linkify>
             </div>)
         }   
     ) 

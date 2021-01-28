@@ -20,6 +20,7 @@
     "react": "16.13.1",
     "react-countdown": "^2.3.1",
     "react-dom": "16.13.1",
+    "react-linkify": "^1.0.0-alpha",
     "react-loader-spinner": "^3.1.14",
     "sass": "^1.26.10"
   }

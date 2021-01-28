@@ -3,6 +3,7 @@
     padding-left:100px;
     padding-right:100px;
 }
+
 .messageModal{
     border-radius: 10px;
     background:#E4E5E8;
@@ -19,6 +20,12 @@
         font-size: 12px;
         color: #905F19;
         margin-top:10px;
+    }
+    a{
+        color: unset;
+    }
+    a:hover {
+        color: #A2773A;
     }
 }
 
