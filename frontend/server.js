@@ -49,7 +49,7 @@ app.prepare().then(() => {
   })
 
   server.get('/workshops', (req, res) => {
-    return app.render(req, res, '/workshops', req.query)
+    res.redirect(302, 'https://open-source-at-illinois.github.io/workshops/')
   })
 
   server.get('/', (req, res) => {
