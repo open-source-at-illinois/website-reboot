@@ -1,11 +1,11 @@
 import Head from 'next/head'
-import Layout from '../components/layout'
+import Layout, { siteTitle } from '../components/layout'
 
 export default function Members() {
     return (
         <Layout>
             <Head>
-                <title>OSAI Members</title>
+                <title>{siteTitle('Members')}</title>
             </Head>
             <div style={{width:'100vw', display:'flex', justifyContent:'center', flexDirection:'column', alignItems:'center'}}>
                 <h2>Not yet implemented. Want to help? </h2>

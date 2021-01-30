@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import Layout from '../components/layout';
+import Layout, { siteTitle } from '../components/layout';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 import styles from '../styles/Announcements.module.scss';
@@ -65,7 +65,7 @@ export default function Announcements() {
         return (
             <Layout>
                 <Head>
-                    <title>OSAI Announcements</title>
+                    <title>{siteTitle('Announcements')}</title>
                 </Head>
                 <div className={styles.loaderContainer}>
                     <Countdown date={Date.now() + 5000} renderer={renderer}/>
@@ -77,7 +77,7 @@ export default function Announcements() {
     return (
         <Layout>
             <Head>
-                <title>OSAI Announcements</title>
+                <title>{siteTitle('Announcements')}</title>
             </Head>
             <div className={styles.announcementsContainer}>
                 <h2>Announcements</h2>

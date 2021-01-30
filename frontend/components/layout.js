@@ -2,7 +2,7 @@ import Head from 'next/head'
 import styles from './layout.module.scss'
 import Link from 'next/link'
 
-export const siteTitle = 'OSAI'
+export const siteTitle = (name) => name + ' | Open-Source @ Illinois'
 
 export default function Layout({ children }) {
   return (
