@@ -24,9 +24,7 @@ export default function Layout({ children }) {
         <Link href="/projects">
           <a className={styles.link}>Projects</a>
         </Link>
-        <Link href="/workshops">
-          <a className={styles.link}>Workshops</a>
-        </Link>
+          <a href="https://open-source-at-illinois.github.io/workshops/" className={styles.link}>Workshops</a>
         <Link href="/members">
           <a className={styles.link}>Members</a>
         </Link>
