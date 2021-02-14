@@ -21,13 +21,14 @@ export default function Layout({ children }) {
         <Link href="/announcements">
           <a className={styles.link}>Announcements</a>
         </Link>
-        <Link href="/projects">
+        {/* <Link href="/projects">
           <a className={styles.link}>Projects</a>
-        </Link>
+        </Link> */}
           <a href="https://open-source-at-illinois.github.io/workshops/" className={styles.link}>Workshops</a>
-        <Link href="/members">
+          <a href="https://open-source-at-illinois.github.io/wiki/" className={styles.link}>Wiki</a>
+        {/* <Link href="/members">
           <a className={styles.link}>Members</a>
-        </Link>
+        </Link> */}
       </header>
 
       
