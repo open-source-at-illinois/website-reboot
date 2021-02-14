@@ -26,6 +26,7 @@ export default function Layout({ children }) {
         </Link> */}
           <a href="https://open-source-at-illinois.github.io/workshops/" className={styles.link}>Workshops</a>
           <a href="https://open-source-at-illinois.github.io/wiki/" className={styles.link}>Wiki</a>
+          <a href="https://github.com/open-source-at-illinois" className={styles.link}>GitHub</a>
         {/* <Link href="/members">
           <a className={styles.link}>Members</a>
         </Link> */}
