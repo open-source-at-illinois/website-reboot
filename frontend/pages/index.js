@@ -21,7 +21,7 @@ export default function Home() {
           </p>
           <h2>MEETINGS</h2>
           <p>
-          We hold general meetings on Saturdays at 12:30PM CT. We also host project meetings and educational workshops to learn more about open-source!
+            We hold general meetings on Saturdays at 4:00PM CT. We also host project meetings and educational workshops to learn more about open-source!
           </p>
           <h2>DISCORD</h2>
           <p>
