@@ -14,22 +14,17 @@ export default function Layout({ children }) {
           content="Official website for Open Source at Illinois Club"
         />
       </Head>
+
       <header className={styles.navbar}>
         <Link href="/">
           <a className={styles.link}>Home</a>
         </Link>
-        {/* <Link href="/announcements">
-          <a className={styles.link}>Announcements</a>
-        </Link> */}
-        {/* <Link href="/projects">
-          <a className={styles.link}>Projects</a>
-        </Link> */}
+        <Link href="/calendar">
+          <a className={styles.link}>Calendar</a>
+        </Link>
         <a href="https://open-source-at-illinois.github.io/workshops/" className={styles.link}>Workshops</a>
         <a href="https://open-source-at-illinois.github.io/wiki/" className={styles.link}>Wiki</a>
         <a href="https://github.com/open-source-at-illinois" className={styles.link}>GitHub</a>
-        {/* <Link href="/members">
-          <a className={styles.link}>Members</a>
-        </Link> */}
       </header>
 
 
