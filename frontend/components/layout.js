@@ -18,29 +18,29 @@ export default function Layout({ children }) {
         <Link href="/">
           <a className={styles.link}>Home</a>
         </Link>
-        <Link href="/announcements">
+        {/* <Link href="/announcements">
           <a className={styles.link}>Announcements</a>
-        </Link>
+        </Link> */}
         {/* <Link href="/projects">
           <a className={styles.link}>Projects</a>
         </Link> */}
-          <a href="https://open-source-at-illinois.github.io/workshops/" className={styles.link}>Workshops</a>
-          <a href="https://open-source-at-illinois.github.io/wiki/" className={styles.link}>Wiki</a>
-          <a href="https://github.com/open-source-at-illinois" className={styles.link}>GitHub</a>
+        <a href="https://open-source-at-illinois.github.io/workshops/" className={styles.link}>Workshops</a>
+        <a href="https://open-source-at-illinois.github.io/wiki/" className={styles.link}>Wiki</a>
+        <a href="https://github.com/open-source-at-illinois" className={styles.link}>GitHub</a>
         {/* <Link href="/members">
           <a className={styles.link}>Members</a>
         </Link> */}
       </header>
 
-      
+
       <svg width="4em" height="4em" viewBox="0 0 16 16" className={`${"bi bi-list"} ${styles.fa_bars}`} fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-        <path fill-rule="evenodd" d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+        <path fill-rule="evenodd" d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
       </svg>
-      
+
       <main className={styles.main}>{children}</main>
 
       <footer className={styles.footerContainer}>
-        <p>Email us: osai-exec@lists.illinois.edu</p>
+        <p>Email us: opensourceillinois@gmail.com</p>
       </footer>
     </div>
   )

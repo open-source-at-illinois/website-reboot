@@ -35,7 +35,7 @@ discordBot.once('ready', () => {
     console.log('Discord bot is ready at ' + (new Date()).toLocaleString() + '!')
 })
 
-discordBot.login(DISCORD_TOKEN);
+discordBot.login(`DISCORD_TOKEN`);
 
 // Configure app
 app.use(express.json());
