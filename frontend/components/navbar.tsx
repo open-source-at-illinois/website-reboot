@@ -1,15 +1,15 @@
 import { Icon } from '@iconify/react';
 
-const Navbar = ({ height }) => {
+const Navbar = () => {
     return (
-        <div className={`h-${height} flex flex-row w-full fixed top-0 bg-gray-100 mx-0 py-4 justify-between items-center my-0`}>
-            <h1 className='px-2'>
+        <div className={`flex fixed h-20 text-xl flex-row px-10 w-full top-0 bg-gray-100 text-primary-darkBlue justify-between items-center my-0`}>
+            <h1>
                 Open-Source @ Illinois
             </h1>
-            <div className='flex mr-4 gap-5'>
+            <div className='flex gap-10'>
+                <div>Calendar</div>
                 <div>Github</div>
                 <div>Discord</div>
-                <div>Calendar</div>
             </div>
         </div>
     )
