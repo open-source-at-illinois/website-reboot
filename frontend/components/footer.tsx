@@ -50,10 +50,15 @@ const Footer = () => {
                         <hr className='mt-1 mb-2' />
                         <ul>
                             <li>
-                                opensourceillinois (at) gmail.com
+                                {/* Obfuscated email to prevent spam harvesting */}
+                                <a href="mailto:&#111;&#112;&#101;&#110;&#115;&#111;&#117;&#114;&#099;&#101;&#105;&#108;&#108;&#105;&#110;&#111;&#105;&#115;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;">
+                                    opensourceillinois (at) gmail.com
+                                </a>
                             </li>
                             <li>
-                                osai-exec (at) lists.illinois.edu
+                                <a href="mailto:&#111;&#115;&#097;&#105;&#045;&#101;&#120;&#101;&#099;&#064;&#108;&#105;&#115;&#116;&#115;&#046;&#105;&#108;&#108;&#105;&#110;&#111;&#105;&#115;&#046;&#101;&#100;&#117;">
+                                    osai-exec (at) lists.illinois.edu
+                                </a>
                             </li>
                             <li>
                                 or reach out via Discord!
