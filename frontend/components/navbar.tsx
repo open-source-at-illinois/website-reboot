@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 const Navbar = () => {
     return (
-        <div className={`flex fixed h-20 text-xl flex-row px-10 w-full top-0 text-primary-darkBlue justify-between items-center my-0 z-30`}>
+        <div className={`flex fixed h-20 bg-white text-xl flex-row px-10 w-full top-0 text-primary-darkBlue justify-between items-center my-0 z-30`}>
             <Link href="/">
                 <a>
                     Open-Source @ Illinois
@@ -13,7 +13,7 @@ const Navbar = () => {
                     <a>Calendar</a>
                 </Link>
                 <a href='https://github.com/open-source-at-illinois'>Github</a>
-                <a href='https://discord.gg/sKYtc9QhuP '>Discord</a>
+                <a href='https://discord.gg/sKYtc9QhuP'>Discord</a>
             </div>
         </div>
     )
