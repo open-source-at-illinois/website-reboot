@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.blob {
+    width: 100%;
+    background-image: url('../public/blob.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.layers {
+    aspect-ratio: 960/300;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.layer-top {
+    background-image: url('../public/wave-top.svg');
+}
+
+.layer-bottom {
+    background-image: url('../public/wave-bottom.svg');
+}
