@@ -2,8 +2,6 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
 import openSourceSvg from '../public/open-source.svg'
-import { Icon } from '@iconify/react';
-import blob from '../public/blob.svg'
 import DiscordButton from '../components/buttons/discordButton';
 import GithubButton from '../components/buttons/githubButton';
 import CalendarButton from '../components/buttons/calendarButton';
@@ -17,9 +15,9 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon-32.png" />
       </Head>
 
-      <main className='flex flex-col h-screen font-sans'>
+      <main className='flex flex-col font-sans'>
         {/* Hero section */}
-        <section className='flex flex-col-reverse gap-10 md:flex-row items-center mx-10 p-5'>
+        <section className='flex flex-col-reverse gap-10 md:flex-row items-center mx-10 my-5 p-5'>
           <div className='justify-center p-5'>
             <Image className='h-40' src={openSourceSvg} alt='Illustration of Open-source Software' />
           </div>
@@ -41,7 +39,7 @@ const Home: NextPage = () => {
           </div>
         </section>
         {/* Get Involved Section */}
-        <section className="flex justify-center blob items-center text-center h-[50vh]">
+        <section className="flex justify-center blob items-center my-5 text-center h-[50vh] p-5">
           <div className='flex flex-col'>
             <h3 className='text-2xl font-bold text-gray-900 my-4 '>
               How do I get involved?
@@ -58,7 +56,6 @@ const Home: NextPage = () => {
             </div>
           </div>
         </section>
-
       </main>
     </>
   )
