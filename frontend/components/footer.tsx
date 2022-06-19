@@ -10,17 +10,23 @@ const Footer = () => {
                 </div>
                 <div className="flex flex-col md:flex-row gap-16">
                     <div className="flex flex-col">
-                        <h1 className='text-lg text-black'>Get Involved</h1>
+                        <h1 className='text-lg text-black'>Links</h1>
                         <hr className='mt-1 mb-2' />
                         <ul>
                             <li>
                                 <a href="https://discord.gg/sKYtc9QhuP">Discord</a>
                             </li>
                             <li>
+                                <a href="https://github.com/open-source-at-illinois">Github</a>
+                            </li>
+                            <li>
                                 <a href="/calendar">Calendar</a>
                             </li>
                             <li>
                                 <a href="https://illinois.campuslabs.com/engage/organization/open-source-at-illinois">Campus Labs</a>
+                            </li>
+                            <li>
+                                <a href="https://open-source-at-illinois.github.io/constitution/">Constitution</a>
                             </li>
                         </ul>
                     </div>
