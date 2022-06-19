@@ -2,6 +2,7 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
 import openSourceSvg from '../public/open-source.svg'
+import vcsSvg from '../public/vcs.svg'
 import DiscordButton from '../components/buttons/discordButton';
 import GithubButton from '../components/buttons/githubButton';
 import CalendarButton from '../components/buttons/calendarButton';
@@ -38,6 +39,7 @@ const Home: NextPage = () => {
             </div>
           </div>
         </section>
+        
         {/* Get Involved Section */}
         <section className="flex justify-center blob items-center my-5 text-center h-[50vh] p-5">
           <div className='flex flex-col'>
@@ -54,6 +56,28 @@ const Home: NextPage = () => {
               <DiscordButton />
               <CalendarButton />
             </div>
+          </div>
+        </section>
+
+        {/* More information */}
+        <section className='flex flex-col-reverse gap-10 md:flex-row items-center mx-10 my-5 p-5'>
+          <div className="flex flex-col w-full my-4 break-words">
+            <h3 className='text-2xl my-4'>
+              Learn. Collaborate. Create.
+            </h3>
+            <p>
+              Open-Source at Illinois has a curated set of workshops you can do at your own pace. 
+              Learn and apply version control, REST APIs, static site generators, and more!
+            </p>
+            <p className='my-2'>
+              Collaborate with other developers and gain real world experience by working on our open-source club projects like Cherry and Sudo.
+            </p>
+            <p className='my-2'>
+              Or, start your own project and leverage the Open-Source at Illinois community to guide you along the way
+            </p>
+          </div>
+          <div className='justify-center p-5'>
+            <Image className='h-40' src={vcsSvg} alt='Illustration of Open-source Software' />
           </div>
         </section>
       </main>
