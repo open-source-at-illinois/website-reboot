@@ -3,9 +3,12 @@ import Head from 'next/head'
 import Image from 'next/image'
 import openSourceSvg from '../public/open-source.svg'
 import vcsSvg from '../public/vcs.svg'
+import technologySvg from '../public/technology.svg'
 import DiscordButton from '../components/buttons/discordButton';
 import GithubButton from '../components/buttons/githubButton';
 import CalendarButton from '../components/buttons/calendarButton';
+import LogisticsButton from '../components/buttons/logisticsButton'
+import PageLink from '../components/pagelink'
 
 const Home: NextPage = () => {
   return (
@@ -18,7 +21,7 @@ const Home: NextPage = () => {
 
       <main className='flex flex-col font-sans'>
         {/* Hero section */}
-        <section className='flex flex-col-reverse gap-10 md:flex-row items-center mx-10 my-5 p-5'>
+        <section className='flex flex-col-reverse gap-10 md:flex-row items-center mx-5 md:mx-10 my-5 p-5'>
           <div className='justify-center p-5'>
             <Image className='h-40' src={openSourceSvg} alt='Illustration of Open-source Software' />
           </div>
@@ -39,7 +42,7 @@ const Home: NextPage = () => {
             </div>
           </div>
         </section>
-        
+
         {/* Get Involved Section */}
         <section className="flex justify-center blob items-center my-5 text-center h-[50vh] p-5">
           <div className='flex flex-col'>
@@ -60,17 +63,17 @@ const Home: NextPage = () => {
         </section>
 
         {/* More information */}
-        <section className='flex flex-col-reverse gap-10 md:flex-row items-center mx-10 my-5 p-5'>
+        <section className='flex flex-col-reverse gap-10 md:flex-row items-center mx-5 md:mx-10 my-5 p-5'>
           <div className="flex flex-col w-full my-4 break-words">
             <h3 className='text-2xl my-4'>
               Learn. Collaborate. Create.
             </h3>
             <p>
-              Open-Source at Illinois has a curated set of workshops you can do at your own pace. 
+              Open-Source at Illinois has a curated set of workshops you can do at your own pace.
               Learn and apply version control, REST APIs, static site generators, and more!
             </p>
             <p className='my-2'>
-              Collaborate with other developers and gain real world experience by working on our open-source club projects like Cherry and Sudo.
+              Collaborate with other developers and gain real world experience by working on our open-source club projects like <PageLink href="https://cherry.opensourceatillinois.com/">Cherry</PageLink> and <PageLink href='https://github.com/open-source-at-illinois/osai-bot'>Sudo</PageLink>.
             </p>
             <p className='my-2'>
               Or, start your own project and leverage the Open-Source at Illinois community to guide you along the way
@@ -78,6 +81,27 @@ const Home: NextPage = () => {
           </div>
           <div className='justify-center p-5'>
             <Image className='h-40' src={vcsSvg} alt='Illustration of Open-source Software' />
+          </div>
+        </section>
+
+        {/* Logistics & Technology */}
+        <section className='flex flex-col gap-10 md:flex-row items-center mx-5 md:mx-10 my-5 p-5'>
+          <div className='justify-center p-5'>
+            <Image className='h-40' src={technologySvg} alt='Illustration of Open-source Software' />
+          </div>
+          <div className="flex flex-col w-full my-4 break-words">
+            <h3 className='text-2xl my-4'>
+              Workflow & Automation
+            </h3>
+            <p>
+              We're on a quest to make the Open-Source at Illinois experience as easy and fun as possible.
+            </p>
+            <p className='my-1'>
+              Leveraging awesome tools like bots, webhooks and CI/CD helps us focus on our community and our mission to further the ideas of open source and information freedom.
+            </p>
+            <div className="flex flex-row gap-5 my-4 justify-center md:justify-start w-full">
+              <LogisticsButton />
+            </div>
           </div>
         </section>
       </main>

@@ -25,3 +25,23 @@
 .layer-bottom {
     background-image: url('../public/wave-bottom.svg');
 }
+
+.post h1 {
+    @apply text-3xl font-bold my-4 text-primary-darkOrange font-mdh1
+}
+
+.post h2 {
+    @apply text-2xl font-bold mb-4 mt-5 text-primary-darkBlue underline underline-offset-8 font-mdh2
+}
+
+.post h3 {
+    @apply text-xl font-bold mb-4 mt-4 text-primary-darkBlue underline underline-offset-8 font-mdh2
+}
+
+.post h4 {
+    @apply text-lg font-bold mb-2 mt-4 text-primary-darkBlue font-mdh2
+}
+
+.post p {
+    @apply my-2
+}

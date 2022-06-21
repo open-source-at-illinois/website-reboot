@@ -14,7 +14,7 @@ const Navbar = () => {
                     <Link href='/calendar'>
                         <a className='hover:text-primary-lightBlue duration-300'>Calendar</a>
                     </Link>
-                    <a className='hover:text-primary-lightBlue duration-300' href='https://github.com/open-source-at-illinois'>Github</a>
+                    <a className='hover:text-primary-lightBlue duration-300' href='/logistics'>Logistics</a>
                     <a className='hover:text-primary-lightBlue duration-300' href='https://discord.gg/sKYtc9QhuP'>Discord</a>
                 </div>
             </div>
@@ -29,8 +29,8 @@ const Navbar = () => {
                     <Link href='/calendar'>
                         <Icon icon="akar-icons:calendar" className='text-lg text-primary-darkBlue hover:text-primary-lightBlue duration-200' />
                     </Link>
-                    <a className='hover:text-primary-lightBlue duration-300' href='https://github.com/open-source-at-illinois'>
-                        <Icon icon="akar-icons:github-fill" className='text-lg text-primary-darkBlue hover:text-primary-lightBlue duration-200' />
+                    <a className='hover:text-primary-lightBlue duration-300' href='/logistics'>
+                        <Icon icon="fluent:fast-acceleration-20-regular" className='text-xl text-primary-darkBlue hover:text-primary-lightBlue duration-200' />
                     </a>
                     <a className='hover:text-primary-lightBlue duration-300' href='https://discord.gg/sKYtc9QhuP'>
                         <Icon icon="akar-icons:discord-fill" className='text-lg text-primary-darkBlue hover:text-primary-lightBlue duration-200' />

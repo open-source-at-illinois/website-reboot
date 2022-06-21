@@ -1,0 +1,39 @@
+import GithubButton from '../components/buttons/githubButton';
+import PostLayout from '../components/mdxLayout';
+import Image from 'next/image'
+import teaching from '../public/teaching.svg'
+
+
+# Logistics @ OSAI
+
+Open-Source at Illinois is open to all current (full or part time) students of the University of Illinois, Urbana Champaign.
+
+We use Discord to automate our logistics and communication. You can find these commands below.
+
+## Meetings & Events
+
+*Fall 2022 Meeting Location & Times T.B.D*
+
+Meetings happen every week at a recurring time and place.
+
+Open-Source at Illinois runs *Open-Source Showcase* a couple of times a year, where faculty and students are invited to show off their software projects.
+
+### Verification
+
+Run `/netid <your_netid>` on Discord to verify your affiliation with Illinois.
+
+### Attendance
+
+Each meeting will have a unique code given out during the meeting.
+
+Run `/attend <code>` to mark your attendance.
+
+## Github
+
+Our projects and other software assets (including this website) are hosted on Github. 
+
+Access to join the Github organization is given to contributors of Open-Source at Illinois projects.
+
+<Image className='mt-10' height={250} src={teaching} alt='Illustration about meetings' />
+
+export default ({ children }) => <PostLayout>{children}</PostLayout>

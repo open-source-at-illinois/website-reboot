@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    "./pages/**/*.{js,ts,jsx,tsx}",
+    "./pages/**/*.{js,ts,jsx,tsx,md,mdx}",
     "./components/**/*.{js,ts,jsx,tsx}"
   ],
   theme: {
@@ -17,6 +17,8 @@ module.exports = {
     },
     fontFamily: {
       'sans': ['Comfortaa', 'sans-serif'],
+      'mdh1': ['Fira Sans', 'sans-serif'],
+      'mdh2': ['Lato', 'sans-serif'],
     }
   },
   plugins: [],
