@@ -1,35 +1,35 @@
-# name: Deploy to cPanel action
+name: Deploy to VPS
 
-# on: push
+on: [push]
 
-# jobs:
-#   deploy:
-#     name: Deploy to cPanel
-#     runs-on: ubuntu-latest
-#     env:
-#       CPANEL_DEPLOY_ROOT: ${{ secrets.CPANEL_FRONTEND_DEPLOY_ROOT }}
-#       CPANEL_HOST: ${{ secrets.CPANEL_HOST }}
-#       CPANEL_USER: ${{ secrets.CPANEL_USER }}
-#     steps:
-#       - uses: actions/checkout@v2
-#         with:
-#           fetch-depth: 0
-#       # Set up SSH
-#       - uses: webfactory/ssh-agent@v0.4.1
-#         with:
-#           ssh-private-key: ${{ secrets.CPANEL_OSAIWEBSITE_PRIVATE }}
-#       - run: ssh-keyscan $CPANEL_HOST >> $HOME/.ssh/known_hosts
-#       # Set up node
-#       - uses: actions/setup-node@v2
-#         with:
-#           node-version: '12'
-#       # Note: Shortcut way of restricting the branches that this runs on -- if a repo with the branch name exists, it will be pushed to.
-#       - run: |
-#           git config --global user.email "action@github.com"
-#           git config --global user.name "GitHub Action"
-#           (cd frontend && npm install)
-#           npm run predeploy
-#           git add -f ./frontend/.next
-#           git commit -m "<ACTION_ONLY> Add production files to frontend for serving"
-#           git remote add cpanel "${CPANEL_USER}@${CPANEL_HOST}:${CPANEL_DEPLOY_ROOT}/$(git rev-parse --abbrev-ref HEAD)/"
-#           git push -f cpanel
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+
+    - name: Copy repository contents via scp
+      uses: appleboy/scp-action@master
+      env:
+        HOST: ${{ secrets.HOST }}
+        USERNAME: ${{ secrets.USERNAME }}
+        PORT: ${{ secrets.PORT }}
+        KEY: ${{ secrets.SSHKEY }}
+      with:
+        source: "."
+        target: "/osai-website/website-reboot"
+
+    - name: Executing remote commands
+      uses: appleboy/ssh-action@master
+      with:
+        host: ${{ secrets.HOST }}
+        USERNAME: ${{ secrets.USERNAME }}
+        PORT: ${{ secrets.PORT }}
+        KEY: ${{ secrets.SSHKEY }}
+        script: |
+          cd /osai-website/website-reboot/frontend
+          yarn && yarn build
+          pm2 stop osai-website
+          pm2 start yarn --name osai-website -- start
