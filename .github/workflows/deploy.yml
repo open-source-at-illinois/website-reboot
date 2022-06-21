@@ -30,6 +30,8 @@ jobs:
         KEY: ${{ secrets.SSHKEY }}
         script: |
           cd /osai-website/website-reboot/frontend
+          export NVM_DIR=~/.nvm
+          source ~/.nvm/nvm.sh
           yarn && yarn build
           pm2 stop osai-website
           pm2 start yarn --name osai-website -- start
