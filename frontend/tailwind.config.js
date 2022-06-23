@@ -17,8 +17,8 @@ module.exports = {
     },
     fontFamily: {
       'sans': ['Comfortaa', 'sans-serif'],
-      'mdh1': ['Fira Sans', 'sans-serif'],
-      'mdh2': ['Lato', 'sans-serif'],
+      'mdh1': ['Exo 2', 'sans-serif'],
+      'mdh2': ['Maitree', 'serif'],
     }
   },
   plugins: [],

@@ -13,9 +13,9 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
-        <link rel="preconnect" href="https://fonts.googleapis.com"/>
-        <link rel="preconnect" href="https://fonts.gstatic.com"/>
-        <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Fira+Sans&family=Lato&display=swap" rel="stylesheet"/>
+          <link rel="preconnect" href="https://fonts.googleapis.com" />
+          <link rel="preconnect" href="https://fonts.gstatic.com" />
+          <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Exo+2&family=Fira+Sans&family=Lato&family=Maitree&family=Nunito&family=Oxygen&display=swap" rel="stylesheet" />
         </Head>
         <body>
           <Main />
