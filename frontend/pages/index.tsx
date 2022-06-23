@@ -21,12 +21,12 @@ const Home: NextPage = () => {
 
       <main className='flex flex-col font-sans'>
         {/* Hero section */}
-        <section className='flex flex-col-reverse gap-10 md:flex-row items-center mx-5 md:mx-10 my-5 p-5'>
+        <section className='flex flex-col-reverse gap-10 md:flex-row items-center mb-5 md:mx-10 my-5 p-5'>
           <div className='justify-center p-5'>
             <Image className='h-40' src={openSourceSvg} alt='Illustration of Open-source Software' />
           </div>
           <div className="flex flex-col w-full my-4 break-words">
-            <h3 className='text-2xl my-4'>
+            <h3 className='text-2xl mb-4'>
               Public facing software, accessible to all.
             </h3>
             <p>
