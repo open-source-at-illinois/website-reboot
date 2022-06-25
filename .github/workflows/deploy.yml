@@ -34,4 +34,5 @@ jobs:
           source ~/.nvm/nvm.sh
           yarn && yarn build
           pm2 stop osai-website
+          pm2 del osai-website
           pm2 start yarn --name osai-website -- start
