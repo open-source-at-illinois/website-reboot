@@ -63,11 +63,13 @@ const Home: NextPage = () => {
             Application expires 24th July, 2022.
           </p>
           <div className='flex flex-row gap-5 my-4 justify-center align-center w-full'>
-            <Link href='/impact'>
-              <a className='flex text-white bg-primary-lightBlue hover:bg-primary-darkBlue duration-300 rounded-lg items-center p-2 px-3'>
-                Make an Impact
-              </a>
-            </Link>
+            <a
+              className='flex text-white bg-primary-lightBlue hover:bg-primary-darkBlue duration-300 rounded-lg items-center p-2 px-3'
+              href='https://forms.gle/pnvQ691NpL7avckj7'
+              target='_blank'
+              rel='noopener noreferrer'>
+              Make an Impact
+            </a>
           </div>
         </section>
 
