@@ -1,4 +1,5 @@
 import { NextPage } from 'next';
+import Head from 'next/head';
 import CalendarButton from '../components/buttons/calendarButton';
 
 const Calendar: NextPage = () => {
@@ -7,9 +8,14 @@ const Calendar: NextPage = () => {
   };
   return (
     <>
-      <header>
-        <title>OSAI Calendar</title>
-      </header>
+      <Head>
+        <title>Calendar | Open-Source @ Illinois</title>
+        <meta
+          name='description'
+          content='The Open Source at Illinois Calendar. Find latest events & meetings here.'
+        />
+        <link rel='icon' href='../public/favicon.ico' />
+      </Head>
       <main>
         <div className='flex flex-col my-5 text-center items-center'>
           <h1 className='text-xl my-2'>
