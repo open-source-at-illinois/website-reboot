@@ -10,14 +10,14 @@ import CalendarButton from '../components/buttons/calendarButton';
 import LogisticsButton from '../components/buttons/logisticsButton';
 import PageLink from '../components/pagelink';
 import Link from 'next/link';
+import { descriptionText } from '../components/content';
 
 const Home: NextPage = () => {
   return (
     <>
       <Head>
         <title>Open-Source at Illinois</title>
-        <meta name='description' content='All things Open-Source' />
-        <link rel='icon' href='/favicon-32.png' />
+        <meta name='description' content={descriptionText} />
       </Head>
 
       <main className='flex flex-col font-sans'>
