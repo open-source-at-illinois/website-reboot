@@ -9,6 +9,7 @@ import GithubButton from '../components/buttons/githubButton';
 import CalendarButton from '../components/buttons/calendarButton';
 import LogisticsButton from '../components/buttons/logisticsButton';
 import PageLink from '../components/pagelink';
+import Link from 'next/link';
 
 const Home: NextPage = () => {
   return (
@@ -47,6 +48,26 @@ const Home: NextPage = () => {
               <DiscordButton />
               <GithubButton />
             </div>
+          </div>
+        </section>
+
+        <section className='flex flex-col justify-center items-center my-5 text-center p-5 bg-recruit py-10'>
+          <h3 className='text-2xl font-bold text-gray-900 my-4 '>
+            We're looking for change makers.
+          </h3>
+          <p className=''>
+            We are looking for passionate, growth minded people to join our team
+          </p>
+          <p>
+            Find our current openings, and apply using the link below.
+            Application expires 24th July, 2022.
+          </p>
+          <div className='flex flex-row gap-5 my-4 justify-center align-center w-full'>
+            <Link href='/impact'>
+              <a className='flex text-white bg-primary-lightBlue hover:bg-primary-darkBlue duration-300 rounded-lg items-center p-2 px-3'>
+                Make an Impact
+              </a>
+            </Link>
           </div>
         </section>
 

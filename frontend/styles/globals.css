@@ -2,6 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+.bg-recruit {
+  background: rgb(63, 96, 217);
+  background: linear-gradient(
+    90deg,
+    rgba(63, 96, 217, 1) 0%,
+    rgba(182, 195, 241, 1) 17%,
+    rgba(194, 205, 243, 1) 31%,
+    rgba(223, 229, 249, 1) 54%,
+    rgba(253, 253, 255, 1) 75%
+  );
+}
+
 .blob {
   width: 100%;
   background-image: url('../public/blob.svg');
