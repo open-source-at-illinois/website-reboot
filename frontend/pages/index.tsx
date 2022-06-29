@@ -1,16 +1,17 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import Image from 'next/image';
-import openSourceSvg from '../public/open-source.svg';
-import vcsSvg from '../public/vcs.svg';
-import technologySvg from '../public/technology.svg';
+import FadeInView from '../components/animations/fadeInView';
+import ScaleOnHover from '../components/animations/scaleOnHover';
+import CalendarButton from '../components/buttons/calendarButton';
 import DiscordButton from '../components/buttons/discordButton';
 import GithubButton from '../components/buttons/githubButton';
-import CalendarButton from '../components/buttons/calendarButton';
 import LogisticsButton from '../components/buttons/logisticsButton';
-import PageLink from '../components/pagelink';
-import Link from 'next/link';
 import { descriptionText } from '../components/content';
+import PageLink from '../components/pagelink';
+import openSourceSvg from '../public/open-source.svg';
+import technologySvg from '../public/technology.svg';
+import vcsSvg from '../public/vcs.svg';
 
 const Home: NextPage = () => {
   return (
@@ -24,11 +25,13 @@ const Home: NextPage = () => {
         {/* Hero section */}
         <section className='flex flex-col-reverse gap-10 md:flex-row items-center mb-5 md:mx-10 my-5 p-5'>
           <div className='justify-center p-5'>
-            <Image
-              className='h-40'
-              src={openSourceSvg}
-              alt='Illustration of Open-source Software'
-            />
+            <FadeInView>
+              <Image
+                className='h-40'
+                src={openSourceSvg}
+                alt='Illustration of Open-source Software'
+              />
+            </FadeInView>
           </div>
           <div className='flex flex-col w-full my-4 break-words'>
             <h3 className='text-2xl mb-4'>
@@ -63,13 +66,15 @@ const Home: NextPage = () => {
             Application expires 24th July, 2022.
           </p>
           <div className='flex flex-row gap-5 my-4 justify-center align-center w-full'>
-            <a
-              className='flex text-white bg-primary-lightBlue hover:bg-primary-darkBlue duration-300 rounded-lg items-center p-2 px-3'
-              href='https://forms.gle/pnvQ691NpL7avckj7'
-              target='_blank'
-              rel='noopener noreferrer'>
-              Make an Impact
-            </a>
+            <ScaleOnHover>
+              <a
+                className='flex text-white bg-primary-lightBlue hover:bg-primary-darkBlue duration-300 rounded-lg items-center p-2 px-3'
+                href='https://forms.gle/pnvQ691NpL7avckj7'
+                target='_blank'
+                rel='noopener noreferrer'>
+                Make an Impact
+              </a>
+            </ScaleOnHover>
           </div>
         </section>
 
@@ -121,22 +126,26 @@ const Home: NextPage = () => {
             </p>
           </div>
           <div className='justify-center p-5'>
-            <Image
-              className='h-40'
-              src={vcsSvg}
-              alt='Illustration of Open-source Software'
-            />
+            <FadeInView>
+              <Image
+                className='h-40'
+                src={vcsSvg}
+                alt='Illustration of Open-source Software'
+              />
+            </FadeInView>
           </div>
         </section>
 
         {/* Logistics & Technology */}
         <section className='flex flex-col gap-10 md:flex-row items-center mx-5 md:mx-10 my-5 p-5'>
           <div className='justify-center p-5'>
-            <Image
-              className='h-40'
-              src={technologySvg}
-              alt='Illustration of Open-source Software'
-            />
+            <FadeInView>
+              <Image
+                className='h-40'
+                src={technologySvg}
+                alt='Illustration of Open-source Software'
+              />
+            </FadeInView>
           </div>
           <div className='flex flex-col w-full my-4 break-words'>
             <h3 className='text-2xl my-4'>Workflow & Automation</h3>
