@@ -34,12 +34,10 @@ const Home: NextPage = () => {
             </FadeInView>
           </div>
           <div className='flex flex-col w-full my-4 break-words'>
-            <h3 className='text-2xl mb-4'>
-              Public facing software, accessible to all.
-            </h3>
+            <h3 className='text-2xl mb-4'>Technology, made transparent.</h3>
             <p>
-              Open-Source software runs our smart watches, elevators, traffic
-              signals and countless other systems we use every day.
+              Open-source software runs our world. From supercomputers to
+              traffic signals and everything in between.
             </p>
             <p className='my-1'>
               At Open-Source @ Illinois, we take a deep dive into the
