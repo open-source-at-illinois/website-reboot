@@ -3,8 +3,8 @@ import PageLink from './pagelink';
 
 const Footer = () => {
   return (
-    <footer className='flex flex-col bg-gray-100 p-5'>
-      <div className='flex flex-col text-center md:flex-row md:text-left justify-center space-x-8 bottom-0 text-primary-darkBlue pt-5'>
+    <footer className='flex flex-col bg-gray-100 dark:bg-gray-600 p-5'>
+      <div className='flex flex-col text-center md:flex-row md:text-left justify-center space-x-8 bottom-0 text-primary-darkBlue dark:text-dark-text pt-5'>
         <div className='flex flex-row items-center justify-center m-5'>
           <Image
             src='/UofI-wordmark.png'
@@ -23,7 +23,7 @@ const Footer = () => {
         </div>
         <div className='flex flex-col px-5 md:flex-row space-y-5 md:space-y-0 md:space-x-10'>
           <div className='flex flex-col'>
-            <h1 className='text-lg text-black'>Links</h1>
+            <h1 className='text-lg text-black dark:text-white'>Links</h1>
             <hr className='mt-1 mb-2' />
             <ul>
               <li>
@@ -51,7 +51,7 @@ const Footer = () => {
             </ul>
           </div>
           <div className='flex flex-col'>
-            <h1 className='text-lg text-black'>Projects</h1>
+            <h1 className='text-lg text-black dark:text-white'>Projects</h1>
             <hr className='mt-1 mb-2' />
             <ul>
               <li>
@@ -70,7 +70,7 @@ const Footer = () => {
             </ul>
           </div>
           <div className='flex flex-col'>
-            <h1 className='text-lg text-black'>Contact</h1>
+            <h1 className='text-lg text-black dark:text-white'>Contact</h1>
             <hr className='mt-1 mb-2' />
             <ul>
               <li>
