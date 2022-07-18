@@ -13,6 +13,12 @@ module.exports = {
           darkOrange: '#d09a22',
           lightOrange: '#FFC12C',
         },
+        dark: {
+          darkBlue: '#16224c',
+          lightBlue: '#3F60D9',
+          darkOrange: '#d09a22',
+          bg: '#0f172a',
+        }
       },
     },
     fontFamily: {
@@ -21,5 +27,6 @@ module.exports = {
       mdh2: ['Maitree', 'serif'],
     },
   },
+  darkMode: 'class',
   plugins: [],
 };
