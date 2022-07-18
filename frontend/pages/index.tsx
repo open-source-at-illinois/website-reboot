@@ -23,7 +23,7 @@ const Home: NextPage = () => {
 
       <main className='flex flex-col font-sans'>
         {/* Hero section */}
-        <section className='flex flex-col-reverse gap-10 md:flex-row items-center mb-5 md:mx-10 my-5 p-5'>
+        <section className='flex flex-col-reverse gap-10 md:flex-row items-center md:mx-10 my-5 p-5'>
           <div className='justify-center p-5'>
             <FadeInView>
               <Image
@@ -53,7 +53,7 @@ const Home: NextPage = () => {
         </section>
 
         <section className='flex flex-col justify-center items-center my-5 text-center p-5 bg-recruit py-10'>
-          <h3 className='text-2xl font-bold text-gray-900 my-4 '>
+          <h3 className='text-2xl font-bold text-gray-900 dark:text-white  my-4 '>
             We're looking for change makers.
           </h3>
           <p className=''>
@@ -79,7 +79,7 @@ const Home: NextPage = () => {
         {/* Get Involved Section */}
         <section className='flex justify-center blob items-center my-5 text-center h-[50vh] p-5'>
           <div className='flex flex-col'>
-            <h3 className='text-2xl font-bold text-gray-900 my-4 '>
+            <h3 className='text-2xl font-bold text-gray-900 dark:text-white my-4 '>
               How do I get involved?
             </h3>
             <p className=''>
