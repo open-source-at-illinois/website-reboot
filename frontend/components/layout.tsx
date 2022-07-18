@@ -1,7 +1,7 @@
 import { Children, PropsWithChildren, useEffect } from 'react';
 import useLocalStorage from 'use-local-storage';
 import Footer from './footer';
-import Navbar from './navbar';
+import Navbar from './navbar/navbar';
 
 const Layout = (props: PropsWithChildren) => {
   let defaultDark = false;
@@ -22,7 +22,7 @@ const Layout = (props: PropsWithChildren) => {
         <div className={`flex flex-col overflow-x-clip`}>
           <Navbar theme={theme} setTheme={setTheme} />
           {/* mt needs to match navbar height */}
-          <main className='mt-14 md:mt-20 mb-5 dark:bg-dark-bg dark:text-gray-400'>
+          <main className='mt-14 md:mt-20 mb-5 dark:bg-dark-bg dark:text-gray-300'>
             {props.children}
           </main>
           <Footer />
