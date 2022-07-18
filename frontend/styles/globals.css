@@ -7,10 +7,11 @@
   background: linear-gradient(
     90deg,
     rgba(63, 96, 217, 1) 0%,
-    rgba(182, 195, 241, 1) 17%,
-    rgba(194, 205, 243, 1) 31%,
-    rgba(223, 229, 249, 1) 54%,
-    rgba(253, 253, 255, 1) 75%
+    rgba(63, 96, 217, 0.75) 17%,
+    rgba(63, 96, 217, 0.5) 31%,
+    rgba(63, 96, 217, 0.25) 54%,
+    rgba(63, 96, 217, 0.15) 70%,
+    rgba(63, 96, 217, 0) 90%
   );
 }
 
@@ -39,19 +40,19 @@
 }
 
 .post h1 {
-  @apply text-3xl font-bold my-4 text-[#18169f] font-mdh1;
+  @apply text-3xl font-bold my-4 text-dark-lightBlue font-mdh1;
 }
 
 .post h2 {
-  @apply text-2xl font-bold mb-4 mt-5 text-primary-darkBlue underline decoration-1 underline-offset-8 font-mdh2;
+  @apply text-2xl font-bold mb-4 mt-5 text-primary-darkBlue dark:text-white underline decoration-1 underline-offset-8 font-mdh2;
 }
 
 .post h3 {
-  @apply text-xl font-bold mb-4 mt-4 text-primary-darkBlue font-mdh2;
+  @apply text-xl font-bold mb-4 mt-4 text-primary-darkBlue dark:text-white font-mdh2;
 }
 
 .post h4 {
-  @apply text-lg font-bold mb-2 mt-4 text-primary-darkBlue font-mdh2;
+  @apply text-lg font-bold mb-2 mt-4 text-primary-darkBlue dark:text-white font-mdh2;
 }
 
 .post p {
