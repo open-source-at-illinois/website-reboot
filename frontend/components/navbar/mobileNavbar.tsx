@@ -2,13 +2,7 @@ import { Icon } from '@iconify/react';
 import Link from 'next/link';
 import ThemeSwitch from '../buttons/themeSwitch';
 
-const MobileNavbar = ({
-  theme,
-  setTheme,
-}: {
-  theme: string;
-  setTheme: any;
-}) => {
+const MobileNavbar = () => {
   return (
     <div
       className={`flex fixed h-14 bg-white dark:bg-black text-md flex-row px-10 w-full top-0 text-primary-darkBlue dark:text-dark-text justify-between items-center my-0 z-30`}>
@@ -41,7 +35,7 @@ const MobileNavbar = ({
             className='text-lg text-primary-darkBlue dark:text-dark-text hover:text-primary-lightBlue duration-200'
           />
         </a>
-        <ThemeSwitch setTheme={setTheme} theme={theme} />
+        <ThemeSwitch />
       </div>
     </div>
   );

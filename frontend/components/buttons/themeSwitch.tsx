@@ -1,9 +1,21 @@
 import { Icon } from '@iconify/react';
+import { useTheme } from 'next-themes';
+import { useEffect, useState } from 'react';
 
-const ThemeSwitch = ({ theme, setTheme }: { theme: string; setTheme: any }) => {
+const ThemeSwitch = () => {
+  const [mounted, setMounted] = useState(false);
+  const { theme, setTheme } = useTheme();
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) {
+    return null;
+  }
+
   const onClick = () => {
     setTheme(theme === 'dark' ? 'light' : 'dark');
-    console.log('setting theme', theme);
   };
 
   return (

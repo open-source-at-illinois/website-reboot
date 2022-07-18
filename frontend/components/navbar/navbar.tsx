@@ -2,7 +2,7 @@ import Link from 'next/link';
 import ThemeSwitch from '../buttons/themeSwitch';
 import MobileNavbar from './mobileNavbar';
 
-const Navbar = ({ theme, setTheme }: { theme: string; setTheme: any }) => {
+const Navbar = () => {
   const iconStyle =
     'text-primary-darkBlue dark:text-gray-400 hover:text-primary-lightBlue duration-200';
 
@@ -31,11 +31,11 @@ const Navbar = ({ theme, setTheme }: { theme: string; setTheme: any }) => {
             href='https://discord.gg/sKYtc9QhuP'>
             Discord
           </a>
-          <ThemeSwitch setTheme={setTheme} theme={theme} />
+          <ThemeSwitch />
         </div>
       </div>
       <div className='md:hidden'>
-        <MobileNavbar theme={theme} setTheme={setTheme} />
+        <MobileNavbar />
       </div>
     </header>
   );

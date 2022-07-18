@@ -13,10 +13,10 @@
     "@next/mdx": "^12.1.6",
     "framer-motion": "^6.3.16",
     "next": "12.1.6",
+    "next-themes": "^0.2.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "sharp": "^0.30.7",
-    "use-local-storage": "^2.3.6"
+    "sharp": "^0.30.7"
   },
   "devDependencies": {
     "@iconify/react": "^3.2.2",
