@@ -4,13 +4,21 @@ import { Icon } from '@iconify/react';
 const Footer = () => {
   return (
     <footer className='flex flex-col bg-gray-100 p-5'>
-      <div className='flex flex-col text-center md:flex-row md:text-left justify-center gap-10 bottom-0 text-primary-darkBlue pt-5'>
-        <div className='flex items-center justify-center my-5 mx-5'>
+      <div className='flex flex-col text-center md:flex-row md:text-left justify-center space-x-8 bottom-0 text-primary-darkBlue pt-5'>
+        <div className='flex flex-row items-center justify-center m-5'>
+          <Image
+            src='/UofI-wordmark.png'
+            alt='University of Illinois wordmark'
+            height={50}
+            width={192}
+          />
+        </div>
+        <div className='flex flex-row items-center justify-center m-5'>
           <Image
             src='/OSAI tranparent 1.png'
             alt='Illinois Open-Source Logo'
-            width={200}
-            height={200}
+            width={150}
+            height={150}
           />
         </div>
         <div className='flex flex-col md:flex-row gap-16'>
