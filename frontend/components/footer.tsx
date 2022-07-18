@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { Icon } from '@iconify/react';
+import PageLink from './pagelink';
 
 const Footer = () => {
   return (
@@ -21,7 +21,7 @@ const Footer = () => {
             height={150}
           />
         </div>
-        <div className='flex flex-col md:flex-row gap-16'>
+        <div className='flex flex-col px-5 md:flex-row space-y-5 md:space-y-0 md:space-x-10'>
           <div className='flex flex-col'>
             <h1 className='text-lg text-black'>Links</h1>
             <hr className='mt-1 mb-2' />
@@ -89,8 +89,11 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className='text-sm text-center'>
-        Copyright 2022 Open-Source @ Illinois
+      <div className='text-sm text-center mt-5'>
+        <div>Copyright 2022 Open-Source @ Illinois</div>
+        <div>
+          Illustrations by <PageLink href='https://undraw.co/'>Undraw</PageLink>
+        </div>
       </div>
     </footer>
   );
