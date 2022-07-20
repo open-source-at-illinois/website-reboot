@@ -9,7 +9,7 @@ const Navbar = () => {
   return (
     <header>
       <div
-        className={`hidden md:flex fixed h-20 bg-white dark:bg-black text-xl flex-row px-10 w-full top-0 text-primary-darkBlue dark:text-dark-text justify-between items-center my-0 z-30`}>
+        className={`hidden md:flex fixed h-20 duration-500 bg-white dark:bg-dark-bg text-xl flex-row px-10 w-full top-0 text-primary-darkBlue dark:text-dark-text justify-between items-center my-0 z-30`}>
         <Link href='/'>
           <a className='hover:text-primary-lightBlue duration-300'>
             Open-Source @ Illinois
