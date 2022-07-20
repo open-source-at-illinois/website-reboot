@@ -9,7 +9,7 @@ const Layout = (props: PropsWithChildren) => {
       <div className={`flex flex-col overflow-x-clip`}>
         <Navbar />
         {/* mt needs to match navbar height */}
-        <main className='mt-14 md:mt-20 duration-500 dark:bg-dark-bg dark:text-gray-300'>
+        <main className='mt-14 md:mt-20 duration-500 bg-white dark:bg-dark-bg dark:text-gray-300'>
           {props.children}
         </main>
         <Footer />
