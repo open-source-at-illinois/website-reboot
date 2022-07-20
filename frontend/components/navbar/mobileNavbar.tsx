@@ -5,7 +5,7 @@ import ThemeSwitch from '../buttons/themeSwitch';
 const MobileNavbar = () => {
   return (
     <div
-      className={`flex fixed h-14 bg-white dark:bg-black text-md flex-row px-10 w-full top-0 text-primary-darkBlue dark:text-dark-text justify-between items-center my-0 z-30`}>
+      className={`flex fixed h-14 bg-white dark:bg-black text-md flex-row px-5 w-full top-0 text-primary-darkBlue dark:text-dark-text justify-between items-center my-0 z-30`}>
       <Link href='/'>
         <a className='hover:text-primary-lightBlue duration-300'>
           Open-Source @ Illinois

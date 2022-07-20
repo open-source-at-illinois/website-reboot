@@ -1,15 +1,13 @@
+import { Icon } from '@iconify/react';
 import Link from 'next/link';
 import ThemeSwitch from '../buttons/themeSwitch';
 import MobileNavbar from './mobileNavbar';
 
 const Navbar = () => {
-  const iconStyle =
-    'text-primary-darkBlue dark:text-gray-400 hover:text-primary-lightBlue duration-200';
-
   return (
     <header>
       <div
-        className={`hidden md:flex fixed h-20 bg-white dark:bg-black text-xl flex-row px-10 w-full top-0 text-primary-darkBlue dark:text-dark-text justify-between items-center my-0 z-30`}>
+        className={`hidden md:flex fixed h-20 duration-500 bg-white dark:bg-dark-bg text-xl flex-row px-10 w-full top-0 text-primary-darkBlue dark:text-dark-text justify-between items-center my-0 z-30`}>
         <Link href='/'>
           <a className='hover:text-primary-lightBlue duration-300'>
             Open-Source @ Illinois
@@ -21,15 +19,20 @@ const Navbar = () => {
               Calendar
             </a>
           </Link>
+          <Link href='/logistics'>
+            <a className='hover:text-primary-lightBlue duration-300'>
+              Logistics
+            </a>
+          </Link>
           <a
-            className='hover:text-primary-lightBlue duration-300'
-            href='/logistics'>
-            Logistics
-          </a>
-          <a
-            className='hover:text-primary-lightBlue duration-300'
-            href='https://discord.gg/sKYtc9QhuP'>
-            Discord
+            className='flex hover:text-primary-lightBlue duration-300'
+            href='https://discord.gg/sKYtc9QhuP'
+            target='_blank'
+            rel='noopener noreferrer'>
+            <Icon
+              icon='akar-icons:discord-fill'
+              className='flex self-center text-lg text-primary-darkBlue dark:text-dark-text hover:text-primary-lightBlue duration-200'
+            />
           </a>
           <ThemeSwitch />
         </div>
