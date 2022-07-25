@@ -22,6 +22,15 @@
   background: #3f60d9;
 }
 
+.bg-radial {
+  background: rgb(0, 57, 255);
+  background: radial-gradient(
+    circle,
+    rgba(0, 57, 255, 0) 26%,
+    rgba(73, 113, 251, 0.3) 50%
+  );
+}
+
 .bg-recruit {
   background: rgb(63, 96, 217);
   background: linear-gradient(
