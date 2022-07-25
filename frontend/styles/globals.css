@@ -91,3 +91,7 @@
 .post p {
   @apply my-2 ml-3;
 }
+
+.post a {
+  @apply text-primary-lightBlue hover:dark:text-white hover:text-primary-darkBlue;
+}
