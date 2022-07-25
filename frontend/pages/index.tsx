@@ -78,7 +78,7 @@ const Home: NextPage = () => {
         </section> */}
 
         {/* Get Involved Section */}
-        <section className='flex justify-center blob items-center my-5 text-center h-[50vh] p-5'>
+        <section className='flex justify-center bg-radial items-center my-5 text-center h-[50vh] p-5'>
           <div className='flex flex-col'>
             <h3 className='text-2xl font-bold text-gray-900 dark:text-white my-4 '>
               How do I get involved?
