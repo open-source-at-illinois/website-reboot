@@ -22,6 +22,15 @@
   background: #3f60d9;
 }
 
+.bg-radial {
+  background: rgb(0, 57, 255);
+  background: radial-gradient(
+    circle,
+    rgba(0, 57, 255, 0) 26%,
+    rgba(73, 113, 251, 0.3) 50%
+  );
+}
+
 .bg-recruit {
   background: rgb(63, 96, 217);
   background: linear-gradient(
@@ -59,22 +68,30 @@
   background-image: url('../public/wave-bottom.svg');
 }
 
+.post {
+  @apply bg-white dark:bg-dark-bg duration-500;
+}
+
 .post h1 {
   @apply text-3xl font-bold my-4 text-dark-lightBlue font-mdh1;
 }
 
 .post h2 {
-  @apply text-2xl font-bold mb-4 mt-5 text-primary-darkBlue dark:text-white underline decoration-1 underline-offset-8 font-mdh2;
+  @apply text-2xl font-bold mb-4 mt-5 duration-300 text-primary-darkBlue dark:text-white underline decoration-1 underline-offset-8 font-mdh2;
 }
 
 .post h3 {
-  @apply text-xl font-bold mb-4 mt-4 text-primary-darkBlue dark:text-white font-mdh2;
+  @apply text-xl font-bold mb-4 mt-4 duration-300 text-primary-darkBlue dark:text-white font-mdh2;
 }
 
 .post h4 {
-  @apply text-lg font-bold mb-2 mt-4 text-primary-darkBlue dark:text-white font-mdh2;
+  @apply text-lg font-bold mb-2 mt-4 duration-300 text-primary-darkBlue dark:text-white font-mdh2;
 }
 
 .post p {
-  @apply my-2;
+  @apply my-2 ml-3;
+}
+
+.post a {
+  @apply text-primary-lightBlue hover:dark:text-white hover:text-primary-darkBlue;
 }
