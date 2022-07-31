@@ -95,3 +95,7 @@
 .post a {
   @apply text-primary-lightBlue hover:dark:text-white hover:text-primary-darkBlue;
 }
+
+.post ul {
+  @apply list-disc my-2 ml-6;
+}
