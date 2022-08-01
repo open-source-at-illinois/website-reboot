@@ -19,9 +19,7 @@ const MobileNavbar = () => {
             className='text-lg text-primary-darkBlue dark:text-dark-text hover:text-primary-lightBlue duration-200'
           />
         </Link>
-        <a
-          className='hover:text-primary-lightBlue duration-300'
-          href='/logistics'>
+        <a className='hover:text-primary-lightBlue duration-300' href='/README'>
           <Icon
             icon='fluent:fast-acceleration-20-regular'
             className='text-xl text-primary-darkBlue dark:text-dark-text hover:text-primary-lightBlue duration-200'
