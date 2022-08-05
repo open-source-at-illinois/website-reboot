@@ -1,0 +1,59 @@
+import GithubButton from '../components/buttons/githubButton';
+import PostLayout from '../components/mdxLayout';
+import Image from 'next/image';
+import teaching from '../public/teaching.svg';
+import Head from 'next/head';
+
+<Head>
+  <title>README | Open-Source at Illinois</title>
+  <meta
+    name='description'
+    content='Logistics at Open-Source @ Illinois. Find information related to meetings, involvement, automation and so on.'
+  />
+  <link rel='icon' href='../public/favicon.ico' />
+</Head>
+
+# README.md
+
+Documentation for Open-Source at Illinois
+
+### Meetings & Events
+
+Meeting information will be updated on the [calendar page](/calendar) (Coming Soon!)
+
+Open-Source at Illinois also runs workshops and the _Open-Source Showcase_, where faculty and students are invited to show off their software projects.
+
+### Verification
+
+Run `/netid <your_netid>` on Discord to verify your affiliation with the University of Illinois.
+
+### Attendance
+
+Run `/attend <code>` to mark your attendance. The `<code>` is given out in the middle of the meeting, and will automatically award you points for attendance.
+
+### Point System
+
+This Fall, we're piloting a new point system to recognize and appreciate our members' efforts towards the club.
+
+- You can see how many points a meeting is worth by running /events on discord, or on the [calendar page](/calendar) (Coming soon!)
+
+- See how many points you have by running `/points` on Discord (Coming soon!)
+
+- In general, normal meetings are worth 10 points; Socials, workshops and other events are worth 15-30 points.
+
+- Crossing a 40 point threshold gives you the 'active' role on discord, and enables you to run for leadership positions at Open-Source at Illinois
+
+### Github
+
+Our projects and other software assets (including this website) are hosted on Github.
+
+Access to join the Github organization is given to contributors of Open-Source at Illinois projects.
+
+<Image
+  className='mt-10'
+  height={250}
+  src={teaching}
+  alt='Illustration about meetings'
+/>
+
+export default ({ children }) => <PostLayout>{children}</PostLayout>;

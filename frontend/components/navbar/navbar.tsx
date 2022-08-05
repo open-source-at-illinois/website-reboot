@@ -19,10 +19,8 @@ const Navbar = () => {
               Calendar
             </a>
           </Link>
-          <Link href='/logistics'>
-            <a className='hover:text-primary-lightBlue duration-300'>
-              Logistics
-            </a>
+          <Link href='/README'>
+            <a className='hover:text-primary-lightBlue duration-300'>README</a>
           </Link>
           <a
             className='flex hover:text-primary-lightBlue duration-300'
