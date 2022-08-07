@@ -6,9 +6,9 @@ const CalendarButton = () => {
   return (
     <ScaleOnHover>
       <a
-        className='flex flex-row text-white bg-primary-lightOrange border-2 border-primary-lightOrange hover:border-primary-darkOrange hover:bg-primary-darkOrange duration-300 rounded-lg items-center gap-4 p-2'
+        className='flex flex-row text-white dark:text-dark-bg bg-primary-lightOrange dark:bg-primary-darkOrange hover:border-primary-darkOrange hover:bg-primary-darkOrange duration-300 rounded-lg items-center gap-4 p-2'
         href='https://bit.ly/3AOYya8'>
-        <Icon icon='akar-icons:calendar' color='white' className='text-xl' />
+        <Icon icon='akar-icons:calendar' className='text-xl' />
         <div className='mr-2'>Add Calendar</div>
       </a>
     </ScaleOnHover>
