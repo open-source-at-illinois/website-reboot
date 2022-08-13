@@ -10,6 +10,7 @@ import dreamingSvg from '../public/dreaming.svg';
 import useSWR, { Fetcher } from 'swr';
 import UpNextEvent from '../components/cards/upNextEvent';
 import Error from '../components/views/error';
+import Loading from '../components/views/loading';
 
 export interface MaskedEventType {
   name: string;
@@ -57,7 +58,13 @@ const Calendar: NextPage = () => {
         <Error />
       </>
     );
-  if (!data) return <div>loading...</div>;
+  if (!data)
+    return (
+      <>
+        <PageHead />
+        <Loading />
+      </>
+    );
 
   const upNextEvent = data[0];
   const events = data.slice(1);
