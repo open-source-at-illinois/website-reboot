@@ -1,4 +1,5 @@
 import { Icon } from '@iconify/react';
+import moment from 'moment';
 import { FC } from 'react';
 import {
   cardStyleByPoints,
@@ -11,8 +12,9 @@ export interface Props {
 }
 
 const UpNextEvent: FC<Props> = ({ event }) => {
+  const relativeTime = moment(event.when).format('MMMM Do [at] h:mm A');
   return (
-    <div className='flex flex-col md:flex-row gap-5 items-center'>
+    <div className='flex flex-col md:flex-row gap-5 items-center w-fit mx-auto'>
       <div
         className={`flex flex-col mx-auto cursor-default items-stretch justify-between w-80 
             shadow-card dark:text-white dark:shadow-dark-card dark:hover:shadow-dark-card-hover 
@@ -32,7 +34,7 @@ const UpNextEvent: FC<Props> = ({ event }) => {
       </div>
       <div className='px-3 max-w-xl'>
         <p className='text-left text-gray-700 dark:text-gray-300 font-semibold'>
-          In a week, {event.when}
+          {relativeTime}
         </p>
         <p className='text-left text-gray-700 dark:text-gray-300 font-semibold'>
           {event.where}

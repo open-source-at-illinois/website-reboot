@@ -11,6 +11,7 @@ import useSWR, { Fetcher } from 'swr';
 import UpNextEvent from '../components/cards/upNextEvent';
 import Error from '../components/views/error';
 import Loading from '../components/views/loading';
+import moment from 'moment-timezone';
 
 export interface MaskedEventType {
   name: string;
@@ -46,6 +47,21 @@ const PageHead = () => {
   );
 };
 
+const Hero = () => {
+  return (
+    <section className='flex flex-col m-5 text-center items-center'>
+      <h1 className='text-xl my-2'>
+        Meetings, events, socials. All in one place.
+      </h1>
+      <p className='mb-4'>
+        Add the Open-Source at Illinois Calendar and stay updated with the
+        latest events.
+      </p>
+      <CalendarButton />
+    </section>
+  );
+};
+
 const Calendar: NextPage = () => {
   const fetcher: Fetcher<MaskedEventType[]> = (url: string) =>
     fetch(url).then((res) => res.json());
@@ -62,50 +78,69 @@ const Calendar: NextPage = () => {
     return (
       <>
         <PageHead />
+        <Hero />
         <Loading />
       </>
     );
 
-  const upNextEvent = data[0];
-  const events = data.slice(1);
+  moment().tz('America/Chicago').format();
+  moment().year(2022);
+
+  const activeEvents = data.filter((event) => event.active);
+  const inactiveEvents = data.filter((event) => !event.active);
+
+  const sortedEvents = activeEvents.sort(sortEventsChronologically);
+
+  const upNextEvent = sortedEvents[0];
+
+  const events = sortedEvents.slice(1);
   return (
     <>
       <PageHead />
+      <Hero />
       <main className='flex flex-col font-sans'>
-        <section className='flex flex-col m-5 text-center items-center'>
-          <h1 className='text-xl my-2'>
-            Meetings, events, socials. All in one place.
-          </h1>
-          <p className='mb-4'>
-            Add the Open-Source at Illinois Calendar and stay updated with the
-            latest events.
-          </p>
-          <CalendarButton />
-        </section>
-        <h2 className='text-center text-2xl my-3 font-medium'>Up Next</h2>
-        <section className='mx-auto p-3 mb-5'>
+        <section className='mb-5 w-full'>
+          <h2 className='text-center text-2xl mt-3 mb-6 font-medium'>
+            Up Next
+          </h2>
           {upNextEvent ? <UpNextEvent event={upNextEvent} /> : <></>}
         </section>
-        <h2 className='text-center text-2xl my-3 font-medium'>
-          Upcoming Events
-        </h2>
-        <section className='flex flex-row flex-wrap gap-5 p-4 justify-center mb-5 text-sm '>
+        <h2 className='text-center text-2xl my-3 font-medium'>Other Events</h2>
+        <section className='flex flex-row flex-wrap gap-5 p-4 justify-center mb-5 text-sm'>
           {events.map((event, index) => (
             <EventDetailCard event={event} key={index} />
           ))}
         </section>
-        {/* This calendar embed is awful, re-include at your own risk! (Tip: add dark:hidden to protect your users' eyes) */}
-        {/* <div className='hidden md:flex w-full justify-center flex-col items-center'>
-          <iframe
-            src='https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23B39DDB&ctz=America%2FChicago&title&showNav=1&showPrint=0&showTabs=1&showCalendars=0&showTz=1&showDate=1&mode=MONTH&src=a3M4ZWt0czBtaHFjdjNnZGhoOTltNWtqZWtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%233F51B5'
-            style={iframeStyle}
-            width='600'
-            height='600'
-            scrolling='no'></iframe>
-        </div> */}
+        {inactiveEvents.length > 0 ? (
+          <>
+            <h2 className='text-center text-2xl my-3 font-medium'>
+              Trip down memory lane
+            </h2>
+            <section className='flex flex-row flex-wrap gap-5 p-4 justify-center mb-5 text-sm '>
+              {inactiveEvents.map((event, index) => (
+                <EventDetailCard event={event} key={index} />
+              ))}
+            </section>
+          </>
+        ) : (
+          <></>
+        )}
       </main>
     </>
   );
+};
+
+const sortEventsChronologically = (a: MaskedEventType, b: MaskedEventType) => {
+  const DATE_FORMAT = 'MMM DD hh:mm A';
+
+  const mom_a = moment(a.when, DATE_FORMAT, true);
+  const mom_b = moment(b.when, DATE_FORMAT, true);
+
+  if (!mom_a.isValid() || !mom_b.isValid()) {
+    return 0;
+  }
+
+  return mom_a.isAfter(mom_b) ? 1 : -1;
 };
 
 export default Calendar;

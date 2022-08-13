@@ -1,4 +1,5 @@
 import { Icon } from '@iconify/react';
+import moment from 'moment';
 import { FC } from 'react';
 import {
   cardStyleByPoints,
@@ -12,6 +13,7 @@ export interface Props {
 }
 
 const EventDetailCard: FC<Props> = ({ event, key }) => {
+  const formattedTime = moment(event.when).format('MMMM Do [at] h:mm A');
   return (
     <div
       key={key}
@@ -31,7 +33,7 @@ const EventDetailCard: FC<Props> = ({ event, key }) => {
       </span>
       <div>
         <p className='text-left text-gray-700 dark:text-gray-300'>
-          {event.when}
+          {formattedTime}
         </p>
         <p className='text-left text-gray-700 dark:text-gray-300'>
           {event.where}
