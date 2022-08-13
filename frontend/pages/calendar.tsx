@@ -9,6 +9,7 @@ import EventDetailCard from '../components/cards/eventDetailCard';
 import dreamingSvg from '../public/dreaming.svg';
 import useSWR, { Fetcher } from 'swr';
 import UpNextEvent from '../components/cards/upNextEvent';
+import Error from '../components/views/error';
 
 export interface MaskedEventType {
   name: string;
@@ -31,26 +32,38 @@ export const cardStyleByPoints = (points: number) => {
 
 export const PRIORITY_THRESHOLD = 10;
 
+const PageHead = () => {
+  return (
+    <Head>
+      <title>Calendar | Open-Source @ Illinois</title>
+      <meta
+        name='description'
+        content='The Open Source at Illinois Calendar. Find latest events and meetings here.'
+      />
+      <link rel='icon' href='../public/favicon.ico' />
+    </Head>
+  );
+};
+
 const Calendar: NextPage = () => {
   const fetcher: Fetcher<MaskedEventType[]> = (url: string) =>
     fetch(url).then((res) => res.json());
   const { data, error } = useSWR('http://localhost:7000/events', fetcher);
 
-  if (error) return <div>failed to load</div>;
+  if (error)
+    return (
+      <>
+        <PageHead />
+        <Error />
+      </>
+    );
   if (!data) return <div>loading...</div>;
 
   const upNextEvent = data[0];
   const events = data.slice(1);
   return (
     <>
-      <Head>
-        <title>Calendar | Open-Source @ Illinois</title>
-        <meta
-          name='description'
-          content='The Open Source at Illinois Calendar. Find latest events and meetings here.'
-        />
-        <link rel='icon' href='../public/favicon.ico' />
-      </Head>
+      <PageHead />
       <main className='flex flex-col font-sans'>
         <section className='flex flex-col m-5 text-center items-center'>
           <h1 className='text-xl my-2'>
