@@ -2,68 +2,45 @@ import { Icon } from '@iconify/react';
 import { NextPage } from 'next';
 import Head from 'next/head';
 import Image from 'next/image';
+import { useEffect, useState } from 'react';
 import FadeInView from '../components/animations/fadeInView';
 import CalendarButton from '../components/buttons/calendarButton';
+import EventDetailCard from '../components/cards/eventDetailCard';
 import dreamingSvg from '../public/dreaming.svg';
+import useSWR, { Fetcher } from 'swr';
+import UpNextEvent from '../components/cards/upNextEvent';
+
+export interface MaskedEventType {
+  name: string;
+  description: string;
+  when: string;
+  where: string;
+  points: number;
+  active: boolean;
+}
+
+export const cardStyleByPoints = (points: number) => {
+  if (points <= 10) {
+    return 'bg-white dark:bg-dark-bg';
+  } else if (points <= 20) {
+    return 'bg-yellow-50 dark:bg-dark-darkBlue font-semibold';
+  } else {
+    return 'bg-blue-100 dark:bg-blue-900';
+  }
+};
+
+export const PRIORITY_THRESHOLD = 10;
 
 const Calendar: NextPage = () => {
-  interface Event {
-    title: string;
-    description?: string;
-    points: number;
-    when?: string;
-    where?: string;
-  }
+  const fetcher: Fetcher<MaskedEventType[]> = (url: string) =>
+    fetch(url).then((res) => res.json());
+  const { data, error } = useSWR('http://localhost:7000/events', fetcher);
 
-  const PRIORITY_THRESHOLD = 10;
-  const events: Event[] = [
-    {
-      title: 'Beginnings of Open-Source',
-      when: 'August 22nd',
-      points: 10,
-      where: 'Siebel Center for Computer Science, Room T.B.D',
-    },
-    {
-      title: 'Programming Languages',
-      when: 'August 29th',
-      points: 20,
-      where: 'Siebel Center for Computer Science, Room T.B.D',
-    },
-    {
-      title: 'Software in teams: Version Control with Git',
-      when: 'August 29th',
-      points: 10,
-      where: 'Siebel Center for Computer Science, Room T.B.D',
-    },
-    {
-      title: 'Programming Languages',
-      when: 'August 29th',
-      points: 20,
-      where: 'Siebel Center for Computer Science, Room T.B.D',
-    },
-    {
-      title: 'Software in teams: Version Control with Git',
-      when: 'August 29th',
-      points: 10,
-      where: 'Siebel Center for Computer Science, Room T.B.D',
-    },
-    {
-      title: 'Programming Languages',
-      when: 'August 29th',
-      points: 20,
-      where: 'Siebel Center for Computer Science, Room T.B.D',
-    },
-    {
-      title: 'Software in teams: Version Control with Git',
-      when: 'August 29th',
-      points: 10,
-      where: 'Siebel Center for Computer Science, Room T.B.D',
-    },
-  ];
+  if (error) return <div>failed to load</div>;
+  if (!data) return <div>loading...</div>;
 
-  const iframeStyle = {
-    borderWidth: 0,
-  };
+  const upNextEvent = data[0];
+  const events = data.slice(1);
   return (
     <>
       <Head>
@@ -85,35 +62,18 @@ const Calendar: NextPage = () => {
           </p>
           <CalendarButton />
         </section>
+        <h2 className='text-center text-2xl my-3 font-medium'>Up Next</h2>
+        <section className='mx-auto p-3 mb-5'>
+          {upNextEvent ? <UpNextEvent event={upNextEvent} /> : <></>}
+        </section>
+        <h2 className='text-center text-2xl my-3 font-medium'>
+          Upcoming Events
+        </h2>
         <section className='flex flex-row flex-wrap gap-5 p-4 justify-center mb-5 text-sm '>
-          {events.map((event) => (
-            <div
-              className={`flex flex-col cursor-default items-stretch justify-between w-80 shadow-card dark:text-white dark:shadow-dark-card dark:hover:shadow-dark-card-hover hover:shadow-card-hover p-5 rounded-xl duration-500 ${
-                event.points > PRIORITY_THRESHOLD
-                  ? 'bg-yellow-50 dark:bg-dark-darkBlue font-semibold'
-                  : 'bg-white dark:bg-dark-bg'
-              }`}>
-              <span className='flex flex-row items-center mb-2'>
-                {event.points > PRIORITY_THRESHOLD ? (
-                  <Icon
-                    icon='bi:star-fill'
-                    className='flex text-lg mr-3 text-yellow-400'
-                  />
-                ) : null}
-                <h2 className='text-center text-lg '>{event.title}</h2>
-              </span>
-              <div>
-                <p className='text-left text-gray-700 dark:text-gray-300'>
-                  {event.when}
-                </p>
-                <p className='text-left text-gray-700 dark:text-gray-300'>
-                  {event.where}
-                </p>
-              </div>
-            </div>
+          {events.map((event, index) => (
+            <EventDetailCard event={event} key={index} />
           ))}
         </section>
-
         {/* This calendar embed is awful, re-include at your own risk! (Tip: add dark:hidden to protect your users' eyes) */}
         {/* <div className='hidden md:flex w-full justify-center flex-col items-center'>
           <iframe
