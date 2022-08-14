@@ -65,7 +65,10 @@ const Hero = () => {
 const Calendar: NextPage = () => {
   const fetcher: Fetcher<MaskedEventType[]> = (url: string) =>
     fetch(url).then((res) => res.json());
-  const { data, error } = useSWR('http://localhost:7000/events', fetcher);
+  const { data, error } = useSWR(
+    'https://api.opensourceatillinois.com/events',
+    fetcher
+  );
 
   if (error)
     return (
