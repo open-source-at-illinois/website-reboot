@@ -6,6 +6,12 @@ module.exports = {
   ],
   theme: {
     extend: {
+      boxShadow: {
+        'card': '0 35px 60px 15px rgba(0, 0, 0, 0.10)',
+        'card-hover': '0 35px 60px 15px rgba(0, 0, 0, 0.25)',
+        'dark-card': '0 35px 60px 15px #17233f',
+        'dark-card-hover': '0 35px 60px 15px #070b15',
+      },
       colors: {
         primary: {
           darkBlue: '#16224c',
