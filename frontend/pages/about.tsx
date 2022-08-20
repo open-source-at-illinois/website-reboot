@@ -2,8 +2,6 @@ import type { NextPage } from 'next';
 import Head from 'next/head';
 import Image from 'next/image';
 import FadeInView from '../components/animations/fadeInView';
-import DiscordButton from '../components/buttons/discordButton';
-import GithubButton from '../components/buttons/githubButton';
 import { descriptionText } from '../components/content';
 import teamWork from '../public/teamwork.svg';
 import execInfos from '../utils/execInfos';
@@ -43,7 +41,7 @@ const About: NextPage = () => {
               students passionate about technology.
             </p>
             <p className='my-1'>
-              Whether you're a computer wizard running a custom Arch Linux
+              Whether you're a computer wizard running a custom Linux
               distribution or a laid back Apple user, you'll find stories,
               people and experiences here that will keep you coming back.
             </p>
@@ -61,7 +59,7 @@ const About: NextPage = () => {
               <a href={`mailto:${exec.email}`} className='mx-auto'>
                 <Image
                   className='rounded-full'
-                  src={exec.headshot || '/../public/headshots/missing.png'}
+                  src={exec.headshot || '/headshots/missing.png'}
                   width={220}
                   height={220}
                 />

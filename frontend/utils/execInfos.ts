@@ -5,13 +5,13 @@ const execInfos: ExecInfo[] = [
     name: 'Soham Kukarni',
     email: 'sohamk2@illinois.edu',
     designation: 'President',
-    bio: "Hi! I’m Soham, and I’m a rising Junior. I’m super passionate  \
+    bio: "Hi! I’m Soham, and I’m a Junior majoring in CS. I’m super passionate  \
       about new technologies and using them for social good. That’s       \
       one of the reasons why I love open-source software. I'm really      \
       good at making dad jokes and building things with code, so if       \
       either of those interst you, I'm more than happy to hang out and    \
       chat :)",
-    headshot: '/../public/headshots/soham.jpg',
+    headshot: '/headshots/soham.jpg',
   },
   {
     name: 'Max Fan',
@@ -68,7 +68,7 @@ const execInfos: ExecInfo[] = [
       I'm also into cooking and a bit of basketball. I'm \
       excited to be a part of Open Source at Illinois this fall, \
       and I can't wait to get started!",
-    headshot: '/../public/headshots/prakhar.jpg',
+    headshot: '/headshots/prakhar.jpg',
   },
   {
     name: 'Akshata Tiwari',
