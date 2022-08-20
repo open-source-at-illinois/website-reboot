@@ -22,6 +22,9 @@ const Navbar = () => {
           <Link href='/README'>
             <a className='hover:text-primary-lightBlue duration-300'>README</a>
           </Link>
+          <Link href='/about'>
+            <a className='hover:text-primary-lightBlue duration-300'>About</a>
+          </Link>
           <a
             className='flex hover:text-primary-lightBlue duration-300'
             href='https://discord.gg/sKYtc9QhuP'
