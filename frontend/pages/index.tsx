@@ -1,6 +1,7 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import Image from 'next/image';
+import Link from 'next/link';
 import FadeInView from '../components/animations/fadeInView';
 import ScaleOnHover from '../components/animations/scaleOnHover';
 import CalendarButton from '../components/buttons/calendarButton';
@@ -22,6 +23,25 @@ const Home: NextPage = () => {
       </Head>
 
       <main className='flex flex-col font-sans'>
+        <section className='flex flex-col justify-center items-center text-center px-5 bg-recruit py-10'>
+          <h3 className='text-2xl font-bold text-gray-900 dark:text-white  my-4 '>
+            Here from Quad Day?
+          </h3>
+          <p className=''>You came to the right place.</p>
+          <p>
+            Fill out our quick and easy interest form and we'll get you all the
+            info you'll need
+          </p>
+          <div className='flex flex-row gap-5 my-4 justify-center align-center w-full'>
+            <ScaleOnHover>
+              <a
+                className='flex text-white bg-primary-lightBlue hover:bg-primary-darkBlue duration-300 rounded-lg items-center p-2 px-3'
+                href='/interest'>
+                Let's go
+              </a>
+            </ScaleOnHover>
+          </div>
+        </section>
         {/* Hero section */}
         <section className='flex flex-col-reverse gap-10 md:flex-row items-center md:mx-10 my-5 p-5'>
           <div className='justify-center p-5'>
