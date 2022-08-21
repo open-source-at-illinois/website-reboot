@@ -79,12 +79,10 @@ const execInfos: ExecInfo[] = [
     designation: 'Freshman Representative',
     bio: 'Hi everyone! I am a freshman studying Computer Science +\
        Economics this fall. I love to paint, play poker, work out, and\
-        eat chipotle bowls. I am passionate about social outreach initiatives\
-         that enable digital advocacy and transparency, something I hope to\
-          continue at Open Source! I am excited to explore campus opportunities,\
+        try different foods. I am excited to explore campus opportunities,\
            programs, and cool RSOs while meeting new friends along the way, and I\
             can’t wait to become part of the open source community with all of you!',
-    headshot: '',
+    headshot: '/headshots/IMG_9851 2.jpg',
   },
 ];
 
