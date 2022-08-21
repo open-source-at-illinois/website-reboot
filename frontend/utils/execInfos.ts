@@ -48,15 +48,13 @@ const execInfos: ExecInfo[] = [
     name: 'Anagha Tiwari',
     email: 'anaghat3@illinois.edu',
     designation: 'Freshman Representative',
-    bio: 'Hello :)) My name is Anagha, and I’m a freshman majoring in CS & \
-      Statistics. This year, I am super excited to meet fellow Illini from diverse\
-       majors, cultures, and experiences, while also developing my academic interests \
-       at the university. Specifically at Open Source at Illinois, I hope to be a part \
-       of a welcoming and supportive environment where we can collaborate with one another \
-       to create projects and contribute to the open source community! During my free time, \
-       I love taking walks around campus, playing cards with friends, swimming, working out, \
-       and eating spicy food!',
-    headshot: '',
+    bio: 'Hello everyone :)) I’m a freshman majoring in CS & Statistics. \
+      At Open Source at Illinois, I hope to be a part of a welcoming and \
+      supportive environment where we can collaborate with one another \
+      to create projects and contribute to the open source community! During my \
+      free time, I love taking walks, playing cards, swimming, working out, and eating \
+      and eating spicy food!',
+    headshot: 'IMG_9353.jpg',
   },
   {
     name: 'Prakhar Gupta',
