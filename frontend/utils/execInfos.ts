@@ -54,7 +54,7 @@ const execInfos: ExecInfo[] = [
       to create projects and contribute to the open source community! During my \
       free time, I love taking walks, playing cards, swimming, working out, and eating \
       and eating spicy food!',
-    headshot: 'IMG_9353.jpg',
+    headshot: '/headshots/IMG_9353.jpg',
   },
   {
     name: 'Prakhar Gupta',
