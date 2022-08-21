@@ -79,7 +79,7 @@ const execInfos: ExecInfo[] = [
         try different foods. I am excited to explore campus opportunities,\
            programs, and cool RSOs while meeting new friends along the way, and I\
             can’t wait to become part of the open source community with all of you!',
-    headshot: '',
+    headshot: '/headshots/IMG_9851 2.jpg',
   },
 ];
 
