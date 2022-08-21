@@ -17,8 +17,11 @@ const execInfos: ExecInfo[] = [
     name: 'Max Fan',
     email: 'myfan3@illinois.edu',
     designation: 'Vice President',
-    bio: '',
-    headshot: '',
+    bio: "Hi! I'm Max and I'm a sophmore majoring in CS + Philosophy. I have a \
+      variety of interests, including chess. I believe in building and contributing \
+      to transparent, free, and open source software. Open source software is essential for \
+      a equitable, open, fairer world.",
+    headshot: '/headshots/max.jpg',
   },
   {
     name: 'Arnav Shah',
