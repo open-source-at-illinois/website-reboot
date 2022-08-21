@@ -9,7 +9,7 @@ const execInfos: ExecInfo[] = [
       about new technologies and using them for social good. That’s       \
       one of the reasons why I love open-source software. I'm really      \
       good at making dad jokes and building things with code, so if       \
-      either of those interst you, I'm more than happy to hang out and    \
+      either of those interest you, I'm more than happy to hang out and    \
       chat :)",
     headshot: '/headshots/soham.jpg',
   },
@@ -24,8 +24,11 @@ const execInfos: ExecInfo[] = [
     name: 'Arnav Shah',
     email: 'arnavss2@illinois.edu',
     designation: 'Treasurer',
-    bio: '',
-    headshot: '',
+    bio: 'Hi! I’m Arnav. I’m a rising junior in Computer Science minoring \
+    in business. I want to develop mixed reality software for healthcare. \
+    Outside CS, I like playing Tabla, drums and soccer. Excited to work with\
+     you on Open-Source!!',
+    headshot: '/headshots/arnav.jpeg',
   },
   {
     name: 'Athena Fung',
@@ -42,7 +45,7 @@ const execInfos: ExecInfo[] = [
         call me a fake CS major). I love learning new skills. Recently, I picked\
          up ukulele and have really enjoyed that journey! I am also a very extroverted\
           person and I talk A LOT as you will find out at Open Source events!",
-    headshot: '',
+    headshot: '/headshots/kiran.jpg',
   },
   {
     name: 'Anagha Tiwari',
