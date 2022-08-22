@@ -12,7 +12,12 @@ export interface Props {
 }
 
 const UpNextEvent: FC<Props> = ({ event }) => {
-  const relativeTime = moment(event.when).format('MMMM Do [at] h:mm A');
+  const formattedTimeMoment = moment(event.when);
+  let formattedTime = event.when;
+  if (formattedTimeMoment.isValid()) {
+    formattedTime = formattedTimeMoment.format('MMMM Do [at] h:mm A');
+  }
+
   return (
     <div className='flex flex-col md:flex-row gap-5 items-center w-fit mx-auto'>
       <div
@@ -34,7 +39,7 @@ const UpNextEvent: FC<Props> = ({ event }) => {
       </div>
       <div className='px-3 max-w-xl'>
         <p className='text-left text-gray-700 dark:text-gray-300 font-semibold'>
-          {relativeTime}
+          {formattedTime}
         </p>
         <p className='text-left text-gray-700 dark:text-gray-300 font-semibold'>
           {event.where}
