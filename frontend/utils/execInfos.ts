@@ -37,8 +37,12 @@ const execInfos: ExecInfo[] = [
     name: 'Athena Fung',
     email: 'affung2@illinois.edu',
     designation: 'Secretary',
-    bio: '',
-    headshot: '',
+    bio: 'Hi there! I’m Athena and I’m a junior studying CS from California. \
+    I’m intrigued by the ubiquitous influence of computer science and technology in so many fields, \
+    and am particularly piqued by the intersection with medicine and healthcare. \
+    Aside from academics, I love hiking, growing plants, and hanging out with friends :)) \
+    Glad you’re here to contribute to open-source and make an impact!',
+    headshot: '/headshots/athena pic.JPG',
   },
   {
     name: 'Kiran Kaur',
