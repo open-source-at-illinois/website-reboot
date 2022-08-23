@@ -2,7 +2,7 @@ import { ExecInfo } from '../pages/about';
 
 const execInfos: ExecInfo[] = [
   {
-    name: 'Soham Kukarni',
+    name: 'Soham Kulkarni',
     email: 'sohamk2@illinois.edu',
     designation: 'President',
     bio: "Hi! I’m Soham, and I’m a Junior majoring in CS. I’m super passionate  \
