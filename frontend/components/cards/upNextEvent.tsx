@@ -44,7 +44,7 @@ const UpNextEvent: FC<Props> = ({ event }) => {
         </span>
         <h2 className='text-center text-sm font-thin'>{event.points} points</h2>
       </div>
-      <div className='flex px-3 max-w-xl w-full'>
+      <div className='flex items-center md:items-start flex-col px-3 max-w-xl'>
         <p className='flex text-center md:text-left text-gray-700 dark:text-gray-300 font-semibold'>
           {formattedTime}
         </p>
