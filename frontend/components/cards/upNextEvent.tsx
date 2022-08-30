@@ -12,10 +12,17 @@ export interface Props {
 }
 
 const UpNextEvent: FC<Props> = ({ event }) => {
-  const formattedTimeMoment = moment(event.when);
+  const CURRENT_YEAR = moment().year();
+  const DATE_FORMAT = 'MMM DD hh:mm A YYYY';
+  const formattedTimeMoment = moment(
+    `${event.when} ${CURRENT_YEAR}`,
+    DATE_FORMAT,
+    true
+  );
   let formattedTime = event.when;
   if (formattedTimeMoment.isValid()) {
-    formattedTime = formattedTimeMoment.format('MMMM Do [at] h:mm A');
+    formattedTime = formattedTimeMoment.fromNow();
+    formattedTime += ', ' + formattedTimeMoment.format('MMMM Do [at] h:mm A');
   }
 
   return (
@@ -37,14 +44,14 @@ const UpNextEvent: FC<Props> = ({ event }) => {
         </span>
         <h2 className='text-center text-sm font-thin'>{event.points} points</h2>
       </div>
-      <div className='px-3 max-w-xl'>
-        <p className='text-left text-gray-700 dark:text-gray-300 font-semibold'>
+      <div className='flex px-3 max-w-xl w-full'>
+        <p className='flex text-center md:text-left text-gray-700 dark:text-gray-300 font-semibold'>
           {formattedTime}
         </p>
-        <p className='text-left text-gray-700 dark:text-gray-300 font-semibold'>
+        <p className='flex text-center md:text-left text-gray-700 dark:text-gray-300 font-semibold'>
           {event.where}
         </p>
-        <p className='text-left text-gray-700 dark:text-gray-300'>
+        <p className='flex text-center md:text-left text-gray-700 dark:text-gray-300'>
           {event.description}
         </p>
       </div>
