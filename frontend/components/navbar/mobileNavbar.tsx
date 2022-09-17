@@ -28,7 +28,7 @@ const MobileNavbar = () => {
       </div>
       {open && (
         <div className='fixed right-0 mt-14 z-50 flex flex-col p-3 m-3 items-center gap-5 rounded-md bg-gray-100 dark:bg-dark-darkBlue'>
-          <Link href='/calendar'>Calendar</Link>
+          <Link href='/calendar'>Events</Link>
           <Link
             className='hover:text-primary-lightBlue duration-300'
             href='/README'>

@@ -13,7 +13,12 @@ export interface Props {
 }
 
 const EventDetailCard: FC<Props> = ({ event, key }) => {
-  const formattedTime = moment(event.when).format('MMMM Do [at] h:mm A');
+  const formattedTimeMoment = moment(event.when);
+  let formattedTime = event.when;
+  if (formattedTimeMoment.isValid()) {
+    formattedTime = formattedTimeMoment.format('MMMM Do [at] h:mm A');
+  }
+
   return (
     <div
       key={key}

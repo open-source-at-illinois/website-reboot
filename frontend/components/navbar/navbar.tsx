@@ -16,7 +16,7 @@ const Navbar = () => {
         <div className='flex gap-10'>
           <Link href='/calendar'>
             <a className='hover:text-primary-lightBlue duration-300'>
-              Calendar
+              Events
             </a>
           </Link>
           <Link href='/README'>

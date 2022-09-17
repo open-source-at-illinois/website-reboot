@@ -2,7 +2,7 @@ import { ExecInfo } from '../pages/about';
 
 const execInfos: ExecInfo[] = [
   {
-    name: 'Soham Kukarni',
+    name: 'Soham Kulkarni',
     email: 'sohamk2@illinois.edu',
     designation: 'President',
     bio: "Hi! I’m Soham, and I’m a Junior majoring in CS. I’m super passionate  \
@@ -17,8 +17,11 @@ const execInfos: ExecInfo[] = [
     name: 'Max Fan',
     email: 'myfan3@illinois.edu',
     designation: 'Vice President',
-    bio: '',
-    headshot: '',
+    bio: "Hi! I'm Max and I'm a sophmore majoring in CS + Philosophy. I have a \
+      variety of interests, including chess. I believe in building and contributing \
+      to transparent, free, and open source software. Open source software is essential for \
+      an equitable, open, fairer world.",
+    headshot: '/headshots/max.jpg',
   },
   {
     name: 'Arnav Shah',
@@ -34,8 +37,12 @@ const execInfos: ExecInfo[] = [
     name: 'Athena Fung',
     email: 'affung2@illinois.edu',
     designation: 'Secretary',
-    bio: '',
-    headshot: '',
+    bio: 'Hi there! I’m Athena and I’m a junior studying CS from California. \
+    I’m intrigued by the ubiquitous influence of computer science and technology in so many fields, \
+    and am particularly piqued by the intersection with medicine and healthcare. \
+    Aside from academics, I love hiking, growing plants, and hanging out with friends :)) \
+    Glad you’re here to contribute to open-source and make an impact!',
+    headshot: '/headshots/athena pic.JPG',
   },
   {
     name: 'Kiran Kaur',

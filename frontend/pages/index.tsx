@@ -23,23 +23,25 @@ const Home: NextPage = () => {
       </Head>
 
       <main className='flex flex-col font-sans'>
-        <section className='flex flex-col justify-center items-center text-center px-5 bg-recruit py-10'>
-          <h3 className='text-2xl font-bold text-gray-900 dark:text-white  my-4 '>
-            Here from Quad Day?
-          </h3>
-          <p className=''>You came to the right place.</p>
-          <p>
-            Fill out our quick and easy interest form and we'll get you all the
-            info you'll need
-          </p>
-          <div className='flex flex-row gap-5 my-4 justify-center align-center w-full'>
-            <ScaleOnHover>
-              <a
-                className='flex text-white bg-primary-lightBlue hover:bg-primary-darkBlue duration-300 rounded-lg items-center p-2 px-3'
-                href='/interest'>
-                Let's go
-              </a>
-            </ScaleOnHover>
+        <section className='flex flex-col justify-center rear-info-bg items-center text-center'>
+          <div className='backdrop-brightness-[0.55] backdrop-blur-[2px] text-white w-full h-full py-10'>
+            <h3 className='text-2xl font-bold my-4 '>
+              Welcome to Open-Source @ Illinois
+            </h3>
+            <p>You came to the right place.</p>
+            <p>
+              Fill out the interest form below and we'll get you all the info
+              you'll need
+            </p>
+            <div className='flex flex-row gap-5 my-4 justify-center align-center w-full'>
+              <ScaleOnHover>
+                <a
+                  className='flex text-white bg-primary-lightBlue hover:bg-primary-darkBlue duration-300 rounded-lg items-center p-2 px-3'
+                  href='/interest'>
+                  Let's go
+                </a>
+              </ScaleOnHover>
+            </div>
           </div>
         </section>
         {/* Hero section */}
