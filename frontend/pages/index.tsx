@@ -137,7 +137,7 @@ const Home: NextPage = () => {
               </PageLink>{' '}
               and{' '}
               <PageLink href='https://github.com/open-source-at-illinois/osai-bot'>
-                Sudo
+                osai-bot
               </PageLink>
               .
             </p>
