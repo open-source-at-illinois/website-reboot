@@ -30,7 +30,7 @@ const Footer = () => {
                 <a href='https://discord.gg/sKYtc9QhuP'>Discord</a>
               </li>
               <li>
-                <a href='/logistics'>Logistics</a>
+                <a href='https://www.instagram.com/osai.uiuc/'>Instagram</a>
               </li>
               <li>
                 <a href='/calendar'>Calendar</a>
@@ -59,7 +59,7 @@ const Footer = () => {
               </li>
               <li>
                 <a href='https://github.com/open-source-at-illinois/osai-bot'>
-                  Sudo
+                  osai-bot
                 </a>
               </li>
               <li>
