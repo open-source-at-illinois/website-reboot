@@ -13,10 +13,16 @@ export interface Props {
 }
 
 const EventDetailCard: FC<Props> = ({ event, key }) => {
-  const formattedTimeMoment = moment(event.when);
+  const CURRENT_YEAR = moment().year();
+  const DATE_FORMAT = 'MMM DD hh:mm A YYYY';
+  const formattedTimeMoment = moment(
+    `${event.when} ${CURRENT_YEAR}`,
+    DATE_FORMAT,
+    true
+  );
   let formattedTime = event.when;
   if (formattedTimeMoment.isValid()) {
-    formattedTime = formattedTimeMoment.format('MMMM Do [at] h:mm A');
+    formattedTime = formattedTimeMoment.format('dddd, MMMM Do [at] h:mm A ');
   }
 
   return (

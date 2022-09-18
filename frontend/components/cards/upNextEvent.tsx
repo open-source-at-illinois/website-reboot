@@ -22,7 +22,8 @@ const UpNextEvent: FC<Props> = ({ event }) => {
   let formattedTime = event.when;
   if (formattedTimeMoment.isValid()) {
     formattedTime = formattedTimeMoment.fromNow();
-    formattedTime += ', ' + formattedTimeMoment.format('MMMM Do [at] h:mm A');
+    formattedTime +=
+      ': ' + formattedTimeMoment.format('M/D[,] dddd [at] h:mm A');
   }
 
   return (
