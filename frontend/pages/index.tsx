@@ -8,6 +8,8 @@ import CalendarButton from '../components/buttons/calendarButton';
 import DiscordButton from '../components/buttons/discordButton';
 import GithubButton from '../components/buttons/githubButton';
 import LogisticsButton from '../components/buttons/logisticsButton';
+import UpNextEvent from '../components/cards/upNextEvent';
+import UpNextEventWithAPI from '../components/cards/upNextEventWithAPI';
 import { descriptionText } from '../components/content';
 import PageLink from '../components/pagelink';
 import openSourceSvg from '../public/open-source.svg';
@@ -44,6 +46,7 @@ const Home: NextPage = () => {
             </div>
           </div>
         </section>
+
         {/* Hero section */}
         <section className='flex flex-col-reverse gap-10 md:flex-row items-center md:mx-10 my-5 p-5'>
           <div className='justify-center p-5'>
@@ -72,6 +75,9 @@ const Home: NextPage = () => {
               <GithubButton />
             </div>
           </div>
+        </section>
+        <section className='flex flex-col mb-8'>
+          <UpNextEventWithAPI />
         </section>
 
         {/* Recruitment Section, Keeping for future use */}
@@ -137,7 +143,7 @@ const Home: NextPage = () => {
               </PageLink>{' '}
               and{' '}
               <PageLink href='https://github.com/open-source-at-illinois/osai-bot'>
-                Sudo
+                osai-bot
               </PageLink>
               .
             </p>
