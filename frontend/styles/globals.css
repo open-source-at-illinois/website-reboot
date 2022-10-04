@@ -11,6 +11,15 @@
   background-size: cover;
 }
 
+.hacktoberfest-bg {
+  background: url('../public/pictures/hacktoberfest.png') no-repeat
+    center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 .scrollbar::-webkit-scrollbar {
   width: 10px;
   height: 20px;

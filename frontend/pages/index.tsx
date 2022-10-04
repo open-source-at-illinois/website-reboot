@@ -25,7 +25,7 @@ const Home: NextPage = () => {
       </Head>
 
       <main className='flex flex-col font-sans'>
-        <section className='flex flex-col justify-center rear-info-bg items-center text-center'>
+        {/* <section className='flex flex-col justify-center rear-info-bg items-center text-center'>
           <div className='backdrop-brightness-[0.55] backdrop-blur-[2px] text-white w-full h-full py-10'>
             <h3 className='text-2xl font-bold my-4 '>
               Welcome to Open-Source @ Illinois
@@ -45,10 +45,10 @@ const Home: NextPage = () => {
               </ScaleOnHover>
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* Hero section */}
-        <section className='flex flex-col-reverse gap-10 md:flex-row items-center md:mx-10 my-5 p-5'>
+        <section className='flex flex-col-reverse gap-10 md:flex-row items-center md:mx-10 mb-5 px-5 pb-5'>
           <div className='justify-center p-5'>
             <FadeInView>
               <Image
@@ -76,7 +76,31 @@ const Home: NextPage = () => {
             </div>
           </div>
         </section>
-        <section className='flex flex-col mb-8'>
+
+        <section className='flex flex-col justify-center hacktoberfest-bg items-center text-center'>
+          <div className='backdrop-brightness-[0.35] backdrop-blur-[2px] text-white w-full h-full py-10'>
+            <h3 className='text-2xl font-bold my-4 '>
+              Hacktoberfest 2022 is here.
+            </h3>
+            <p>
+              A month long event to celebrate open-source. Code, Collaborate,
+              and Win T-shirts!
+            </p>
+            <div className='flex flex-row gap-5 my-4 justify-center align-center w-full'>
+              <ScaleOnHover>
+                <a
+                  className='flex text-white bg-primary-lightBlue hover:bg-primary-darkBlue duration-300 rounded-lg items-center p-2 px-3'
+                  href='https://hacktoberfest.com/'
+                  target='_blank'
+                  rel='noopener noreferrer'>
+                  Learn more
+                </a>
+              </ScaleOnHover>
+            </div>
+          </div>
+        </section>
+
+        <section className='flex flex-col my-5'>
           <UpNextEventWithAPI />
         </section>
 
