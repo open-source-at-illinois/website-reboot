@@ -12,7 +12,7 @@ const DiscordButton = () => {
         <Icon
           icon='akar-icons:discord-fill'
           color='white'
-          className='text-xl'
+          className='text-xl hidden md:flex'
         />
         <div className='mr-2'>Join the Discord</div>
       </a>

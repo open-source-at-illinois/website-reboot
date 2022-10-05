@@ -7,6 +7,7 @@ import ScaleOnHover from '../components/animations/scaleOnHover';
 import CalendarButton from '../components/buttons/calendarButton';
 import DiscordButton from '../components/buttons/discordButton';
 import GithubButton from '../components/buttons/githubButton';
+import InterestButton from '../components/buttons/interestButton';
 import LogisticsButton from '../components/buttons/logisticsButton';
 import UpNextEvent from '../components/cards/upNextEvent';
 import UpNextEventWithAPI from '../components/cards/upNextEventWithAPI';
@@ -145,7 +146,7 @@ const Home: NextPage = () => {
             </p>
             <div className='flex flex-row gap-5 my-4 justify-center align-center w-full'>
               <DiscordButton />
-              <CalendarButton />
+              <InterestButton />
             </div>
           </div>
         </section>
