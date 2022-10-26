@@ -16,6 +16,7 @@ import PageLink from '../components/pagelink';
 import openSourceSvg from '../public/open-source.svg';
 import technologySvg from '../public/technology.svg';
 import vcsSvg from '../public/vcs.svg';
+import { TypeAnimation } from 'react-type-animation';
 
 const Home: NextPage = () => {
   return (
@@ -86,7 +87,26 @@ const Home: NextPage = () => {
             </FadeInView>
           </div>
           <div className='flex flex-col w-full my-4 break-words'>
-            <h3 className='text-2xl mb-4'>Technology, made transparent.</h3>
+            <TypeAnimation
+              sequence={[
+                'Technology, made transparent',
+                2000, // Waits 1s
+                'Technology, made equitable',
+                2000, // Waits 2s 
+                'Technology, made accessible',
+                2000,
+                'Technology, made inclusive',
+                2000,
+              ]}
+              wrapper='div'
+              cursor={false}
+              repeat={Infinity}
+              style={{
+                fontSize: '1.5rem',
+                lineHeight: '2rem',
+                marginBottom: '1rem',
+              }}
+            />
             <p>
               Open-source software runs our world. From supercomputers to
               traffic signals and everything in between.
