@@ -26,6 +26,33 @@ const Home: NextPage = () => {
       </Head>
 
       <main className='flex flex-col font-sans'>
+        <div className='flex flex-col items-center w-full fluid-gradient p-5'>
+          <h4 className='text-center text-xl font-bold my-2 text-gray-300'>
+            OSAI + SCD Presents
+          </h4>
+          <h3 className='text-center text-2xl font-bold mb-2 text-white'>
+            Human Centered Software Workshop
+          </h3>
+          <p className='text-center text-gray-100 font-bold '>
+            In collaboration with the Siebel Center for Design
+          </p>
+          <p className='text-center text-gray-100'>
+            Wednesday, Nov 9th at 5-7 PM
+          </p>
+          <p className='text-center text-gray-200 '>
+            Fill out the interest form below and we'll get you all the info
+            you'll need
+          </p>
+          <div className='flex flex-row gap-5 my-4 justify-center align-center w-full'>
+            <ScaleOnHover>
+              <a
+                className='flex text-white bg-primary-lightBlue hover:bg-primary-darkBlue duration-300 rounded-lg items-center p-2 px-3'
+                href='https://forms.gle/3dN2JBtFrGESTxxQA'>
+                RSVP Now
+              </a>
+            </ScaleOnHover>
+          </div>
+        </div>
         {/* <section className='flex flex-col justify-center rear-info-bg items-center text-center'>
           <div className='backdrop-brightness-[0.55] backdrop-blur-[2px] text-white w-full h-full py-10'>
             <h3 className='text-2xl font-bold my-4 '>
