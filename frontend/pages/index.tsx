@@ -40,10 +40,9 @@ const Home: NextPage = () => {
             Wednesday, Nov 9th at 5-7 PM
           </p>
           <p className='text-center text-gray-200 '>
-            Fill out the interest form below and we'll get you all the info
-            you'll need
+            Learn how to make equitable technology that works for everyone.
           </p>
-          <div className='flex flex-row gap-5 my-4 justify-center align-center w-full'>
+          <div className='flex flex-row gap-5 my-3 justify-center align-center w-full'>
             <ScaleOnHover>
               <a
                 className='flex text-white bg-primary-lightBlue hover:bg-primary-darkBlue duration-300 rounded-lg items-center p-2 px-3'
