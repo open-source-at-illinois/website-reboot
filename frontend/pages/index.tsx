@@ -53,6 +53,8 @@ const Home: NextPage = () => {
             </ScaleOnHover>
           </div>
         </div>
+
+        {/* Quad Day 2022 */}
         {/* <section className='flex flex-col justify-center rear-info-bg items-center text-center'>
           <div className='backdrop-brightness-[0.55] backdrop-blur-[2px] text-white w-full h-full py-10'>
             <h3 className='text-2xl font-bold my-4 '>
@@ -92,7 +94,7 @@ const Home: NextPage = () => {
                 'Technology, made transparent',
                 2000, // Waits 1s
                 'Technology, made equitable',
-                2000, // Waits 2s 
+                2000, // Waits 2s
                 'Technology, made accessible',
                 2000,
                 'Technology, made inclusive',
@@ -124,7 +126,8 @@ const Home: NextPage = () => {
           </div>
         </section>
 
-        <section className='flex flex-col justify-center hacktoberfest-bg items-center text-center'>
+        {/* hacktoberfest 2022 */}
+        {/* <section className='flex flex-col justify-center hacktoberfest-bg items-center text-center'>
           <div className='backdrop-brightness-[0.35] backdrop-blur-[2px] text-white w-full h-full py-10'>
             <h3 className='text-2xl font-bold my-4 '>
               Hacktoberfest 2022 is here.
@@ -145,7 +148,7 @@ const Home: NextPage = () => {
               </ScaleOnHover>
             </div>
           </div>
-        </section>
+        </section> */}
 
         <section className='flex flex-col my-5'>
           <UpNextEventWithAPI />
