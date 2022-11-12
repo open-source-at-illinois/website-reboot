@@ -27,7 +27,8 @@ const Home: NextPage = () => {
       </Head>
 
       <main className='flex flex-col font-sans'>
-        <div className='flex flex-col items-center w-full fluid-gradient p-5'>
+        {/* Human Centered Software Event */}
+        {/* <div className='flex flex-col items-center w-full fluid-gradient p-5'>
           <h4 className='text-center text-xl font-bold my-2 text-gray-300'>
             OSAI + SCD Presents
           </h4>
@@ -52,7 +53,7 @@ const Home: NextPage = () => {
               </a>
             </ScaleOnHover>
           </div>
-        </div>
+        </div> */}
 
         {/* Quad Day 2022 */}
         {/* <section className='flex flex-col justify-center rear-info-bg items-center text-center'>
