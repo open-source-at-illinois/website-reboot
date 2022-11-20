@@ -1,24 +1,92 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import Image from 'next/image';
-import Link from 'next/link';
+import { TypeAnimation } from 'react-type-animation';
 import FadeInView from '../components/animations/fadeInView';
-import ScaleOnHover from '../components/animations/scaleOnHover';
-import CalendarButton from '../components/buttons/calendarButton';
 import DiscordButton from '../components/buttons/discordButton';
 import GithubButton from '../components/buttons/githubButton';
 import InterestButton from '../components/buttons/interestButton';
 import LogisticsButton from '../components/buttons/logisticsButton';
-import UpNextEvent from '../components/cards/upNextEvent';
 import UpNextEventWithAPI from '../components/cards/upNextEventWithAPI';
 import { descriptionText } from '../components/content';
 import PageLink from '../components/pagelink';
 import openSourceSvg from '../public/open-source.svg';
 import technologySvg from '../public/technology.svg';
+import arnav from '../public/headshots/arnav.jpeg';
 import vcsSvg from '../public/vcs.svg';
-import { TypeAnimation } from 'react-type-animation';
+
+// Import Swiper React components
+import { Autoplay, Pagination, Navigation, EffectCards } from 'swiper';
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/effect-cards';
 
 const Home: NextPage = () => {
+  const images = [
+    'https://imgur.com/XJbwMFI.jpg',
+    'https://imgur.com/FNTRZxi.jpg',
+    'https://imgur.com/K0gAfSh.jpg',
+    'https://imgur.com/Zxzidsu.jpg',
+    'https://imgur.com/wldOdf8.jpg',
+    'https://imgur.com/voHVGC1.jpg',
+    'https://imgur.com/sOF4XHb.jpg',
+    'https://imgur.com/2hHrJMN.jpg',
+    'https://imgur.com/V0QKJDU.jpg',
+    'https://imgur.com/RV0PNfs.jpg',
+    'https://imgur.com/ga8NMR9.jpg',
+    'https://imgur.com/LTtiWZS.jpg',
+    'https://imgur.com/P5Gyluh.jpg',
+    'https://imgur.com/3b1lhu2.jpg',
+    'https://imgur.com/8mqJCn0.jpg',
+    'https://imgur.com/XJbwMFI.jpg',
+    'https://imgur.com/FNTRZxi.jpg',
+    'https://imgur.com/K0gAfSh.jpg',
+    'https://imgur.com/Zxzidsu.jpg',
+    'https://imgur.com/wldOdf8.jpg',
+    'https://imgur.com/voHVGC1.jpg',
+    'https://imgur.com/sOF4XHb.jpg',
+    'https://imgur.com/2hHrJMN.jpg',
+    'https://imgur.com/V0QKJDU.jpg',
+    'https://imgur.com/RV0PNfs.jpg',
+    'https://imgur.com/ga8NMR9.jpg',
+    'https://imgur.com/LTtiWZS.jpg',
+    'https://imgur.com/P5Gyluh.jpg',
+    'https://imgur.com/3b1lhu2.jpg',
+    'https://imgur.com/8mqJCn0.jpg',
+    'https://imgur.com/XJbwMFI.jpg',
+    'https://imgur.com/FNTRZxi.jpg',
+    'https://imgur.com/K0gAfSh.jpg',
+    'https://imgur.com/Zxzidsu.jpg',
+    'https://imgur.com/wldOdf8.jpg',
+    'https://imgur.com/voHVGC1.jpg',
+    'https://imgur.com/sOF4XHb.jpg',
+    'https://imgur.com/2hHrJMN.jpg',
+    'https://imgur.com/V0QKJDU.jpg',
+    'https://imgur.com/RV0PNfs.jpg',
+    'https://imgur.com/ga8NMR9.jpg',
+    'https://imgur.com/LTtiWZS.jpg',
+    'https://imgur.com/P5Gyluh.jpg',
+    'https://imgur.com/3b1lhu2.jpg',
+    'https://imgur.com/8mqJCn0.jpg',
+    'https://imgur.com/XJbwMFI.jpg',
+    'https://imgur.com/FNTRZxi.jpg',
+    'https://imgur.com/K0gAfSh.jpg',
+    'https://imgur.com/Zxzidsu.jpg',
+    'https://imgur.com/wldOdf8.jpg',
+    'https://imgur.com/voHVGC1.jpg',
+    'https://imgur.com/sOF4XHb.jpg',
+    'https://imgur.com/2hHrJMN.jpg',
+    'https://imgur.com/V0QKJDU.jpg',
+    'https://imgur.com/RV0PNfs.jpg',
+    'https://imgur.com/ga8NMR9.jpg',
+    'https://imgur.com/LTtiWZS.jpg',
+    'https://imgur.com/P5Gyluh.jpg',
+    'https://imgur.com/3b1lhu2.jpg',
+    'https://imgur.com/8mqJCn0.jpg',
+  ];
+
   return (
     <>
       <Head>
@@ -27,6 +95,32 @@ const Home: NextPage = () => {
       </Head>
 
       <main className='flex flex-col font-sans'>
+        <div className='m-10 p-10'>
+          <Swiper
+            effect={'cards'}
+            grabCursor={true}
+            modules={[EffectCards, Autoplay, Pagination, Navigation]}
+            autoplay={{
+              delay: 2500,
+              disableOnInteraction: false,
+            }}
+            pagination={{
+              clickable: true,
+            }}
+            navigation={true}
+            className='h-64 w-96'>
+            {images.map((img) => (
+              <SwiperSlide className=''>
+                <img
+                  className='object-cover h-96'
+                  src={img}
+                  title={img}
+                  alt='Illustration of Open-source Software'
+                />
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </div>
         {/* Human Centered Software Event */}
         {/* <div className='flex flex-col items-center w-full fluid-gradient p-5'>
           <h4 className='text-center text-xl font-bold my-2 text-gray-300'>

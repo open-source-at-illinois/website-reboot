@@ -14,4 +14,14 @@ const withMDX = require('@next/mdx')({
 module.exports = withMDX({
   // Append the default value with md extensions
   pageExtensions: ['ts', 'tsx', 'js', 'jsx', 'md', 'mdx'],
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'imgur.com',
+        port: '80',
+        pathname: '/**',
+      },
+    ],
+  },
 });
