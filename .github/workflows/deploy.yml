@@ -1,6 +1,9 @@
 name: Deploy to VPS
 
-on: [push]
+on: 
+  push:
+    branches:
+      - master
 
 jobs:
   build:
