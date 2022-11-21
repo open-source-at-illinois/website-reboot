@@ -1,17 +1,12 @@
-import { Icon } from '@iconify/react';
+import moment from 'moment-timezone';
 import { NextPage } from 'next';
 import Head from 'next/head';
-import Image from 'next/image';
-import { useEffect, useState } from 'react';
-import FadeInView from '../components/animations/fadeInView';
+import useSWR, { Fetcher } from 'swr';
 import CalendarButton from '../components/buttons/calendarButton';
 import EventDetailCard from '../components/cards/eventDetailCard';
-import emptySvg from '../public/empty.svg';
-import useSWR, { Fetcher } from 'swr';
 import UpNextEvent from '../components/cards/upNextEvent';
 import Error from '../components/views/error';
 import Loading from '../components/views/loading';
-import moment from 'moment-timezone';
 
 export interface MaskedEventType {
   name: string;

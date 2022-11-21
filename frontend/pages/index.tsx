@@ -1,22 +1,18 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import Image from 'next/image';
-import Link from 'next/link';
+import { TypeAnimation } from 'react-type-animation';
 import FadeInView from '../components/animations/fadeInView';
-import ScaleOnHover from '../components/animations/scaleOnHover';
-import CalendarButton from '../components/buttons/calendarButton';
 import DiscordButton from '../components/buttons/discordButton';
 import GithubButton from '../components/buttons/githubButton';
 import InterestButton from '../components/buttons/interestButton';
 import LogisticsButton from '../components/buttons/logisticsButton';
-import UpNextEvent from '../components/cards/upNextEvent';
 import UpNextEventWithAPI from '../components/cards/upNextEventWithAPI';
 import { descriptionText } from '../components/content';
 import PageLink from '../components/pagelink';
 import openSourceSvg from '../public/open-source.svg';
 import technologySvg from '../public/technology.svg';
 import vcsSvg from '../public/vcs.svg';
-import { TypeAnimation } from 'react-type-animation';
 
 const Home: NextPage = () => {
   return (
