@@ -89,8 +89,7 @@ const Calendar: NextPage = () => {
 
   const sortedEvents = activeEvents.sort(sortEventsChronologically);
 
-  // const upNextEvent = sortedEvents[0];
-  const upNextEvent = null;
+  const upNextEvent = sortedEvents[0];
 
   const events = sortedEvents.slice(1);
   return (
