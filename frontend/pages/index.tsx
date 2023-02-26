@@ -2,12 +2,12 @@ import type { NextPage } from 'next';
 import Head from 'next/head';
 import Image from 'next/image';
 import { TypeAnimation } from 'react-type-animation';
-import FadeInView from '../components/animations/fadeInView';
 import DiscordButton from '../components/buttons/discordButton';
 import GithubButton from '../components/buttons/githubButton';
 import InterestButton from '../components/buttons/interestButton';
 import LogisticsButton from '../components/buttons/logisticsButton';
 import UpNextEventWithAPI from '../components/cards/upNextEventWithAPI';
+import ImageCards from '../components/cards/imageCards';
 import { descriptionText } from '../components/content';
 import PageLink from '../components/pagelink';
 import openSourceSvg from '../public/open-source.svg';
@@ -15,8 +15,6 @@ import technologySvg from '../public/technology.svg';
 import vcsSvg from '../public/vcs.svg';
 
 const Home: NextPage = () => {
-  
-
   return (
     <>
       <Head>
@@ -25,7 +23,6 @@ const Home: NextPage = () => {
       </Head>
 
       <main className='flex flex-col font-sans'>
-        
         {/* Human Centered Software Event */}
         {/* <div className='flex flex-col items-center w-full fluid-gradient p-5'>
           <h4 className='text-center text-xl font-bold my-2 text-gray-300'>

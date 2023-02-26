@@ -1,9 +1,8 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import Image from 'next/image';
-import FadeInView from '../components/animations/fadeInView';
+import ImageCards from '../components/cards/imageCards';
 import { descriptionText } from '../components/content';
-import teamWork from '../public/teamwork.svg';
 import execInfos from '../utils/execInfos';
 
 export interface ExecInfo {
@@ -24,15 +23,9 @@ const About: NextPage = () => {
 
       <main className='flex flex-col font-sans'>
         {/* Hero section */}
-        <section className='flex flex-col gap-10 md:flex-row-reverse items-center md:mx-10 my-5 p-8'>
-          <div className='justify-center p-5'>
-            <FadeInView>
-              <Image
-                src={teamWork}
-                alt='Illustration of teamwork'
-                height={400}
-              />
-            </FadeInView>
+        <section className='flex flex-col gap-10 md:flex-row-reverse items-center md:mx-20 mb-5 px-8'>
+          <div className='p-5'>
+            <ImageCards />
           </div>
           <div className='flex flex-col w-full my-4 break-words'>
             <h3 className='text-2xl mb-4'>A space for everyone.</h3>
