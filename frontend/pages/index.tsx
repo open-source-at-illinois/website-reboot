@@ -44,13 +44,11 @@ const Home: NextPage = () => {
             Learn how to make equitable technology that works for everyone.
           </p>
           <div className='flex flex-row gap-5 my-3 justify-center align-center w-full'>
-            <ScaleOnHover>
-              <a
-                className='flex text-white bg-primary-lightBlue hover:bg-primary-darkBlue duration-300 rounded-lg items-center p-2 px-3'
-                href='https://forms.gle/3dN2JBtFrGESTxxQA'>
-                RSVP Now
-              </a>
-            </ScaleOnHover>
+            <a
+              className='flex text-white bg-primary-lightBlue hover:bg-primary-darkBlue duration-300 rounded-lg items-center p-2 px-3'
+              href='https://forms.gle/3dN2JBtFrGESTxxQA'>
+              RSVP Now
+            </a>
           </div>
         </div> */}
 
@@ -66,13 +64,11 @@ const Home: NextPage = () => {
               you'll need
             </p>
             <div className='flex flex-row gap-5 my-4 justify-center align-center w-full'>
-              <ScaleOnHover>
-                <a
-                  className='flex text-white bg-primary-lightBlue hover:bg-primary-darkBlue duration-300 rounded-lg items-center p-2 px-3'
-                  href='/interest'>
-                  Let's go
-                </a>
-              </ScaleOnHover>
+              <a
+                className='flex text-white bg-primary-lightBlue hover:bg-primary-darkBlue duration-300 rounded-lg items-center p-2 px-3'
+                href='/interest'>
+                Let's go
+              </a>
             </div>
           </div>
         </section> */}
@@ -80,13 +76,11 @@ const Home: NextPage = () => {
         {/* Hero section */}
         <section className='flex flex-col-reverse gap-10 md:flex-row items-center md:mx-10 mb-5 px-5 pb-5'>
           <div className='justify-center p-5'>
-            <FadeInView>
-              <Image
-                className='h-40'
-                src={openSourceSvg}
-                alt='Illustration of Open-source Software'
-              />
-            </FadeInView>
+            <Image
+              className='h-40'
+              src={openSourceSvg}
+              alt='Illustration of Open-source Software'
+            />
           </div>
           <div className='flex flex-col w-full my-4 break-words'>
             <TypeAnimation
@@ -137,7 +131,6 @@ const Home: NextPage = () => {
               and Win T-shirts!
             </p>
             <div className='flex flex-row gap-5 my-4 justify-center align-center w-full'>
-              <ScaleOnHover>
                 <a
                   className='flex text-white bg-primary-lightBlue hover:bg-primary-darkBlue duration-300 rounded-lg items-center p-2 px-3'
                   href='https://hacktoberfest.com/'
@@ -145,7 +138,6 @@ const Home: NextPage = () => {
                   rel='noopener noreferrer'>
                   Learn more
                 </a>
-              </ScaleOnHover>
             </div>
           </div>
         </section> */}
@@ -227,26 +219,22 @@ const Home: NextPage = () => {
             </p>
           </div>
           <div className='justify-center p-5'>
-            <FadeInView>
-              <Image
-                className='h-40'
-                src={vcsSvg}
-                alt='Illustration of Open-source Software'
-              />
-            </FadeInView>
+            <Image
+              className='h-40'
+              src={vcsSvg}
+              alt='Illustration of Open-source Software'
+            />
           </div>
         </section>
 
         {/* Logistics & Technology */}
         <section className='flex flex-col gap-10 md:flex-row items-center mx-5 md:mx-10 my-5 p-5'>
           <div className='justify-center p-5'>
-            <FadeInView>
-              <Image
-                className='h-40'
-                src={technologySvg}
-                alt='Illustration of Open-source Software'
-              />
-            </FadeInView>
+            <Image
+              className='h-40'
+              src={technologySvg}
+              alt='Illustration of Open-source Software'
+            />
           </div>
           <div className='flex flex-col w-full my-4 break-words'>
             <h3 className='text-2xl my-4'>Workflow & Automation</h3>

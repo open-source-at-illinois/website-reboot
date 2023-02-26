@@ -1,17 +1,12 @@
-import { Icon } from '@iconify/react';
+import moment from 'moment-timezone';
 import { NextPage } from 'next';
 import Head from 'next/head';
-import Image from 'next/image';
-import { useEffect, useState } from 'react';
-import FadeInView from '../components/animations/fadeInView';
+import useSWR, { Fetcher } from 'swr';
 import CalendarButton from '../components/buttons/calendarButton';
 import EventDetailCard from '../components/cards/eventDetailCard';
-import dreamingSvg from '../public/dreaming.svg';
-import useSWR, { Fetcher } from 'swr';
 import UpNextEvent from '../components/cards/upNextEvent';
 import Error from '../components/views/error';
 import Loading from '../components/views/loading';
-import moment from 'moment-timezone';
 
 export interface MaskedEventType {
   name: string;
@@ -103,17 +98,33 @@ const Calendar: NextPage = () => {
       <Hero />
       <main className='flex flex-col font-sans'>
         <section className='mb-5 w-full'>
-          <h2 className='text-center text-2xl mt-3 mb-6 font-medium'>
-            Up Next
-          </h2>
-          {upNextEvent ? <UpNextEvent event={upNextEvent} /> : <></>}
+          {upNextEvent ? (
+            <>
+              <h2 className='text-center text-2xl mt-3 mb-6 font-medium'>
+                Up Next
+              </h2>
+              <UpNextEvent event={upNextEvent} />
+            </>
+          ) : (
+            <div className='text-center text-xl mt-3 mb-6 font-medium'>
+              Exciting events are in the works. Check back soon!
+            </div>
+          )}
         </section>
-        <h2 className='text-center text-2xl my-3 font-medium'>Other Events</h2>
-        <section className='flex flex-row flex-wrap gap-5 p-4 justify-center mb-5 text-sm'>
-          {events.map((event, index) => (
-            <EventDetailCard event={event} key={index} />
-          ))}
-        </section>
+        {events.length > 0 ? (
+          <>
+            <h2 className='text-center text-2xl my-3 font-medium'>
+              Other Events
+            </h2>
+            <section className='flex flex-row flex-wrap gap-5 p-4 justify-center mb-5 text-sm'>
+              {events.map((event, index) => (
+                <EventDetailCard event={event} key={index} />
+              ))}
+            </section>
+          </>
+        ) : (
+          <></>
+        )}
         {inactiveEvents.length > 0 ? (
           <>
             <h2 className='text-center text-2xl my-3 font-medium'>

@@ -33,9 +33,7 @@ const UpNextEventWithAPI = () => {
   );
   let formattedTime = event.when;
   if (formattedTimeMoment.isValid()) {
-    formattedTime = formattedTimeMoment.fromNow();
-    formattedTime +=
-      ': ' + formattedTimeMoment.format('M/D[,] dddd [at] h:mm A');
+    formattedTime = formattedTimeMoment.format('dddd [the] Mo [at] h:mm A');
   }
 
   return (
@@ -69,7 +67,9 @@ const UpNextEventWithAPI = () => {
           ) : null}
           <h2 className='text-center text-lg font-semibold'>{event.name}</h2>
         </span>
-        <h2 className='text-center text-sm font-thin'>{event.points} points</h2>
+        <h4 className='text-center text-gray-700 dark:text-gray-300 px-2'>
+          {formattedTimeMoment.fromNow()}
+        </h4>
       </div>
     </div>
   );

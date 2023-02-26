@@ -14,62 +14,19 @@ const execInfos: ExecInfo[] = [
     headshot: '/headshots/soham.jpg',
   },
   {
-    name: 'Max Fan',
-    email: 'myfan3@illinois.edu',
-    designation: 'Vice President',
-    bio: "Hi! I'm Max and I'm a sophmore majoring in CS + Philosophy. I have a \
-      variety of interests, including chess. I believe in building and contributing \
-      to transparent, free, and open source software. Open source software is essential for \
-      an equitable, open, fairer world.",
-    headshot: '/headshots/max.jpg',
-  },
-  {
     name: 'Arnav Shah',
     email: 'arnavss2@illinois.edu',
-    designation: 'Treasurer',
+    designation: 'Vice President',
     bio: 'Hi! I’m Arnav. I’m a rising junior in Computer Science minoring \
     in business. I want to develop mixed reality software for healthcare. \
     Outside CS, I like playing Tabla, drums and soccer. Excited to work with\
-     you on Open-Source!!',
+     you on Open-Source!',
     headshot: '/headshots/arnav.jpeg',
-  },
-  {
-    name: 'Athena Fung',
-    email: 'affung2@illinois.edu',
-    designation: 'Secretary',
-    bio: 'Hi there! I’m Athena and I’m a junior studying CS from California. \
-    I’m intrigued by the ubiquitous influence of computer science and technology in so many fields, \
-    and am particularly piqued by the intersection with medicine and healthcare. \
-    Aside from academics, I love hiking, growing plants, and hanging out with friends :)) \
-    Glad you’re here to contribute to open-source and make an impact!',
-    headshot: '/headshots/athena pic.JPG',
-  },
-  {
-    name: 'Kiran Kaur',
-    email: 'kaur18@illinois.edu',
-    designation: 'Membership Director',
-    bio: "Hi, I'm Kiran! I'm a Junior in Industrial Engineering (but some may \
-        call me a fake CS major). I love learning new skills. Recently, I picked\
-         up ukulele and have really enjoyed that journey! I am also a very extroverted\
-          person and I talk A LOT as you will find out at Open Source events!",
-    headshot: '/headshots/kiran.jpg',
-  },
-  {
-    name: 'Anagha Tiwari',
-    email: 'anaghat3@illinois.edu',
-    designation: 'Freshman Representative',
-    bio: 'Hello everyone :)) I’m a freshman majoring in CS & Statistics. \
-      At Open Source at Illinois, I hope to be a part of a welcoming and \
-      supportive environment where we can collaborate with one another \
-      to create projects and contribute to the open source community! During my \
-      free time, I love taking walks, playing cards, swimming, working out, and eating \
-      and eating spicy food!',
-    headshot: '/headshots/IMG_9353.jpg',
   },
   {
     name: 'Prakhar Gupta',
     email: 'prakhar7@illinois.edu',
-    designation: 'Freshman Representative',
+    designation: 'Treasurer',
     bio: " I'm Prakhar, an incoming freshman. I'm going to be majoring \
       in Electrical Engineering and will be staying at ISR this year.    \
       I play the guitar and enjoy listening to hip-hop music. \
@@ -79,15 +36,48 @@ const execInfos: ExecInfo[] = [
     headshot: '/headshots/prakhar.jpg',
   },
   {
+    name: 'Anagha Tiwari',
+    email: 'anaghat3@illinois.edu',
+    designation: 'Secretary',
+    bio: 'Hello everyone :)) I’m a freshman majoring in CS & Statistics. \
+      At Open Source at Illinois, I hope to be a part of a welcoming and \
+      supportive environment where we can collaborate with one another \
+      to create projects and contribute to the open source community! During my \
+      free time, I love taking walks, playing cards, swimming, working out, and eating \
+      and eating spicy food!',
+    headshot: '/headshots/IMG_9353.jpg',
+  },
+  {
+    name: 'Max Fan',
+    email: 'myfan3@illinois.edu',
+    designation: 'Contributions Lead',
+    bio: "Hi! I'm Max and I'm a sophmore majoring in CS + Philosophy. I have a \
+      variety of interests, including chess. I believe in building and contributing \
+      to transparent, free, and open source software. Open source software is essential for \
+      an equitable, open, fairer world.",
+    headshot: '/headshots/max.jpg',
+  },
+  {
     name: 'Akshata Tiwari',
     email: 'atiwari5@illinois.edu',
-    designation: 'Freshman Representative',
+    designation: 'Membership Director',
     bio: 'Hi everyone! I am a freshman studying Computer Science +\
        Economics this fall. I love to paint, play poker, work out, and\
         try different foods. I am excited to explore campus opportunities,\
            programs, and cool RSOs while meeting new friends along the way, and I\
             can’t wait to become part of the open source community with all of you!',
     headshot: '/headshots/IMG_9851 2.jpg',
+  },
+  {
+    name: 'Athena Fung',
+    email: 'affung2@illinois.edu',
+    designation: 'Outreach Director',
+    bio: 'Hi there! I’m Athena and I’m a junior studying CS from California. \
+    I’m intrigued by the ubiquitous influence of computer science and technology in so many fields, \
+    and am particularly piqued by the intersection with medicine and healthcare. \
+    Aside from academics, I love hiking, growing plants, and hanging out with friends :)) \
+    Glad you’re here to contribute to open-source and make an impact!',
+    headshot: '/headshots/athena pic.JPG',
   },
 ];
 
