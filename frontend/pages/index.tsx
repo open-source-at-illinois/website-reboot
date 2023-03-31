@@ -50,25 +50,24 @@ const Home: NextPage = () => {
         </div> */}
 
         {/* Quad Day 2022 */}
-        {/* <section className='flex flex-col justify-center rear-info-bg items-center text-center'>
+        <section className='flex flex-col justify-center rear-info-bg items-center text-center'>
           <div className='backdrop-brightness-[0.55] backdrop-blur-[2px] text-white w-full h-full py-10'>
             <h3 className='text-2xl font-bold my-4 '>
               Welcome to Open-Source @ Illinois
             </h3>
             <p>You came to the right place.</p>
             <p>
-              Fill out the interest form below and we'll get you all the info
-              you'll need
+              Fill out the form below and we'll get you all the info you'll need
             </p>
             <div className='flex flex-row gap-5 my-4 justify-center align-center w-full'>
               <a
                 className='flex text-white bg-primary-lightBlue hover:bg-primary-darkBlue duration-300 rounded-lg items-center p-2 px-3'
-                href='/interest'>
-                Let's go
+                href='http://eepurl.com/h-hO_j'>
+                Interest Form
               </a>
             </div>
           </div>
-        </section> */}
+        </section>
 
         {/* Hero section */}
         <section className='flex flex-col-reverse gap-10 md:flex-row items-center md:mx-10 mb-5 px-5 pb-5'>
