@@ -21,7 +21,7 @@ const UpNextEvent: FC<Props> = ({ event }) => {
   );
   let formattedTime = event.when;
   if (formattedTimeMoment.isValid()) {
-    formattedTime = formattedTimeMoment.format('dddd [the] Mo [at] h:mm A');
+    formattedTime = formattedTimeMoment.format('dddd [the] Do [at] h:mm A');
   }
 
   return (
