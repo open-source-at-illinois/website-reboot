@@ -53,18 +53,26 @@ const Home: NextPage = () => {
         <section className='flex flex-col justify-center rear-info-bg items-center text-center'>
           <div className='backdrop-brightness-[0.55] backdrop-blur-[2px] text-white w-full h-full py-10'>
             <h3 className='text-2xl font-bold my-4 '>
-              Welcome to Open-Source @ Illinois
+              Make an impact in the Illinois community
             </h3>
-            <p>You came to the right place.</p>
-            <p>
-              Fill out the form below and we'll get you all the info you'll need
-            </p>
-            <div className='flex flex-row gap-5 my-4 justify-center align-center w-full'>
+            <p>Board and OpenDev Applications now open for 2023-24 term</p>
+
+            <div className='flex flex-col md:flex-row gap-5 my-4 md:justify-center items-center align-center w-full'>
               <a
+                className='flex text-white bg-primary-lightBlue hover:bg-primary-darkBlue duration-300 w-fit rounded-lg items-center p-2 px-3'
+                href='https://forms.gle/gb1f4Mneh7GEnEG37'>
+                Board Application
+              </a>
+              <a
+                className='flex text-white bg-primary-lightBlue hover:bg-primary-darkBlue duration-300 w-fit rounded-lg items-center p-2 px-3'
+                href='https://forms.gle/zm64ASaxDzgb1Z5t5'>
+                OpenDev Application
+              </a>
+              {/* <a
                 className='flex text-white bg-primary-lightBlue hover:bg-primary-darkBlue duration-300 rounded-lg items-center p-2 px-3'
                 href='http://eepurl.com/h-hO_j'>
                 Interest Form
-              </a>
+              </a> */}
             </div>
           </div>
         </section>
