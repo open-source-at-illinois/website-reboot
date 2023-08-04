@@ -107,15 +107,16 @@ const Home: NextPage = () => {
                 marginBottom: '1rem',
               }}
             />
-            <p>
+            {/* <p>
               Open-source software runs our world. From supercomputers to
               traffic signals and everything in between.
+            </p> */}
+            <p className='my-1'>
+              At Open-Source @ Illinois, our primary focus is empowering developers and engineers, enabling them to actively contribute to the tools they rely on.
+              By embracing open-source principles, we aim to cultivate a culture where members freely share ideas, expertise, maintain shared resources, and drive the development of impactful projects that benefit the wider community.
             </p>
             <p className='my-1'>
-              At Open-Source @ Illinois, we take a deep dive into the
-              engineering, ethics and philosophy that deeply impact the
-              technological world. If that sounds like something you want to be
-              a part of, we're excited to have you.
+              Our mission is to democratize access to knowledge and technology, fostering a collaborative environment that celebrates collective intelligence and leaves a lasting impact.
             </p>
             <div className='flex flex-row gap-5 my-4 justify-center md:justify-start w-full'>
               <DiscordButton />
