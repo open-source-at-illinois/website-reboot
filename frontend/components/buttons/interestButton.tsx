@@ -8,7 +8,7 @@ const InterestButton = () => {
     <ScaleOnHover>
       <a
         className='flex flex-row text-primary-darkOrange border-2 border-primary-darkOrange hover:border-primary-lightOrange hover:text-primary-lightOrange duration-300 rounded-lg items-center gap-4 p-2'
-        href='http://eepurl.com/h-hO_j'
+        href='https://forms.gle/LwzGDr3zfU9ZRBFf9'
         target='_blank'
         rel='noopener noreferrer'>
         <Icon

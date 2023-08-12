@@ -55,17 +55,17 @@ const Home: NextPage = () => {
             <h3 className='text-2xl font-bold my-4 '>
               Make an impact in the Illinois community
             </h3>
-            <p>Board and OpenDev Applications now open for 2023-24 term</p>
+            <p>Interest Form and OpenDev Applications for Fall 2023 open now</p>
 
             <div className='flex flex-col md:flex-row gap-5 my-4 md:justify-center items-center align-center w-full'>
               <a
                 className='flex text-white bg-primary-lightBlue hover:bg-primary-darkBlue duration-300 w-fit rounded-lg items-center p-2 px-3'
-                href='https://forms.gle/gb1f4Mneh7GEnEG37'>
-                Board Application
+                href='https://forms.gle/LwzGDr3zfU9ZRBFf9'>
+                Interest Form
               </a>
               <a
                 className='flex text-white bg-primary-lightBlue hover:bg-primary-darkBlue duration-300 w-fit rounded-lg items-center p-2 px-3'
-                href='https://forms.gle/zm64ASaxDzgb1Z5t5'>
+                href='https://forms.gle/jvBWRR28UuE7rvmJ9'>
                 OpenDev Application
               </a>
               {/* <a

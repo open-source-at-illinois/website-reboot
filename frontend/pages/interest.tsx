@@ -5,7 +5,7 @@ const Interest = () => {
     <div className='h-full overflow-x-auto'>
       <iframe
         className='mx-auto'
-        src='https://docs.google.com/forms/d/e/1FAIpQLSfSNE6Fiz-lcRnkjX0MZFQE_69qzP9Vq6HrdfOzIUDVx9CD2Q/viewform?embedded=true'
+        src='https://forms.gle/LwzGDr3zfU9ZRBFf9'
         width='500'
         height='800'>
         <Loading />
