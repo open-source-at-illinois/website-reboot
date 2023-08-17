@@ -2,26 +2,20 @@ import { ExecInfo } from '../pages/about';
 
 const execInfos: ExecInfo[] = [
   {
-    name: 'Soham Kulkarni',
-    email: 'sohamk2@illinois.edu',
-    designation: 'President',
-    bio: "Hi! I’m Soham, and I’m a Junior majoring in CS. I’m super passionate  \
-      about new technologies and using them for social good. That’s       \
-      one of the reasons why I love open-source software. I'm really      \
-      good at making dad jokes and building things with code, so if       \
-      either of those interest you, I'm more than happy to hang out and    \
-      chat :)",
-    headshot: '/headshots/soham.jpg',
+    name: 'Akshata Tiwari',
+    email: 'atiwari5@illinois.edu',
+    designation: 'Co-President',
+    bio: "-",
+    headshot: '/headshots/IMG_9851 2.jpg',
   },
   {
-    name: 'Arnav Shah',
-    email: 'arnavss2@illinois.edu',
-    designation: 'Vice President',
-    bio: 'Hi! I’m Arnav. I’m a rising junior in Computer Science minoring \
-    in business. I want to develop mixed reality software for healthcare. \
-    Outside CS, I like playing Tabla, drums and soccer. Excited to work with\
-     you on Open-Source!',
-    headshot: '/headshots/arnav.jpeg',
+    name: 'Anagha Tiwari',
+    email: 'anaghat3@illinois.edu',
+    designation: 'Co-President',
+    bio: 'Hello! :) I’m Anagha, a sophomore majoring in CS & Statistics. In my free time, I love \
+      working out, playing my viola, and spending time with friends. At OS@I, I hope to create and be part of a welcoming and \
+      supportive community where we can contribute to and grow from the quickly-expanding open source digital transformation.',
+    headshot: '/headshots/anagha_tiwari.jpeg',
   },
   {
     name: 'Prakhar Gupta',
@@ -34,51 +28,7 @@ const execInfos: ExecInfo[] = [
       excited to be a part of Open Source at Illinois this fall, \
       and I can't wait to get started!",
     headshot: '/headshots/prakhar.jpg',
-  },
-  {
-    name: 'Anagha Tiwari',
-    email: 'anaghat3@illinois.edu',
-    designation: 'Secretary',
-    bio: 'Hello everyone :)) I’m a freshman majoring in CS & Statistics. \
-      At Open Source at Illinois, I hope to be a part of a welcoming and \
-      supportive environment where we can collaborate with one another \
-      to create projects and contribute to the open source community! During my \
-      free time, I love taking walks, playing cards, swimming, working out, and eating \
-      and eating spicy food!',
-    headshot: '/headshots/IMG_9353.jpg',
-  },
-  {
-    name: 'Max Fan',
-    email: 'myfan3@illinois.edu',
-    designation: 'Contributions Lead',
-    bio: "Hi! I'm Max and I'm a sophmore majoring in CS + Philosophy. I have a \
-      variety of interests, including chess. I believe in building and contributing \
-      to transparent, free, and open source software. Open source software is essential for \
-      an equitable, open, fairer world.",
-    headshot: '/headshots/max.jpg',
-  },
-  {
-    name: 'Akshata Tiwari',
-    email: 'atiwari5@illinois.edu',
-    designation: 'Membership Director',
-    bio: 'Hi everyone! I am a freshman studying Computer Science +\
-       Economics this fall. I love to paint, play poker, work out, and\
-        try different foods. I am excited to explore campus opportunities,\
-           programs, and cool RSOs while meeting new friends along the way, and I\
-            can’t wait to become part of the open source community with all of you!',
-    headshot: '/headshots/IMG_9851 2.jpg',
-  },
-  {
-    name: 'Athena Fung',
-    email: 'affung2@illinois.edu',
-    designation: 'Outreach Director',
-    bio: 'Hi there! I’m Athena and I’m a junior studying CS from California. \
-    I’m intrigued by the ubiquitous influence of computer science and technology in so many fields, \
-    and am particularly piqued by the intersection with medicine and healthcare. \
-    Aside from academics, I love hiking, growing plants, and hanging out with friends :)) \
-    Glad you’re here to contribute to open-source and make an impact!',
-    headshot: '/headshots/athena pic.JPG',
-  },
+  }
 ];
 
 export default execInfos;
