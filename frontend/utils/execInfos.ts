@@ -15,7 +15,7 @@ const execInfos: ExecInfo[] = [
     bio: 'Hello! :) I’m Anagha, a sophomore majoring in CS & Statistics. In my free time, I love \
       working out, playing my viola, and spending time with friends. At OS@I, I hope to create and be part of a welcoming and \
       supportive community where we can contribute to and grow from the quickly-expanding open source digital transformation.',
-    headshot: '/headshots/anagha_tiwari.jpeg',
+    headshot: '/headshots/anagha_t.jpeg',
   },
   {
     name: 'Prakhar Gupta',
