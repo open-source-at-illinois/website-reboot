@@ -5,8 +5,10 @@ const execInfos: ExecInfo[] = [
     name: 'Akshata Tiwari',
     email: 'atiwari5@illinois.edu',
     designation: 'Co-President',
-    bio: "-",
-    headshot: '/headshots/IMG_9851 2.jpg',
+    bio: 'Hi everyone, I’m Akshata! I’m majoring in Computer Science & Economics and will be a sophomore this year. I enjoy \
+      painting, playing poker, and going on walks. I’m excited to introduce more folks to open source technologies \
+      and establish transparent and robust community-driven development processes in our own campus starting from OS@I itself!',
+    headshot: '/headshots/Akshata Tiwari.jpg',
   },
   {
     name: 'Anagha Tiwari',
