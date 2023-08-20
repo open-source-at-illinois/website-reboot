@@ -39,6 +39,15 @@ const execInfos: ExecInfo[] = [
       and tinkering with random programs. At OSAI I hope to make open source contribution less daunting for \
       newcomers.',
     headshot: '/headshots/AyushJain.jpeg',
+  },
+  {
+    name: 'Alberto Pabon-Castejon',
+    email: 'alp10@illinois.edu',
+    designation: 'Underclassman Representative',
+    bio: "Hello! I'm Alberto, an incoming computer science freshman. Whenever I have free time, I love to play \
+      soccer, work out, or just spend time with my friends. At OS@I, I hope to grow our collaborative \
+      and inclusive community of open-source software development while expanding my own knowledge.",
+    headshot: '/headshots/Alberto.jpg',
   }
 ];
 
