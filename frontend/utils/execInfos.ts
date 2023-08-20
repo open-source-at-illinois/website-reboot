@@ -38,7 +38,7 @@ const execInfos: ExecInfo[] = [
     bio: 'Hello, I am Ayush! I am a sophomore majoring in Computer Science & Philosophy. I love reading \
       and tinkering with random programs. At OSAI I hope to make open source contribution less daunting for \
       newcomers.',
-    headshot: '/headshots/AyushJain.jpg',
+    headshot: '/headshots/AyushJain.jpeg',
   }
 ];
 
