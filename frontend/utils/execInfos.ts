@@ -47,7 +47,7 @@ const execInfos: ExecInfo[] = [
     bio: "Hello! I'm Alberto, an incoming computer science freshman. Whenever I have free time, I love to play \
       soccer, work out, or just spend time with my friends. At OS@I, I hope to grow our collaborative \
       and inclusive community of open-source software development while expanding my own knowledge.",
-    headshot: '/headshots/Alberto.jpg',
+    headshot: '/headshots/Alberto.jpeg',
   }
 ];
 
