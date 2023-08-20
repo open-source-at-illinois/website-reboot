@@ -30,6 +30,15 @@ const execInfos: ExecInfo[] = [
       excited to be a part of Open Source at Illinois this fall, \
       and I can't wait to get started!",
     headshot: '/headshots/prakhar.jpg',
+  }, 
+  {
+    name: 'Ayush Jain', 
+    email: 'ayush9@illinois.edu',
+    designation: 'External Director',
+    bio: 'Hello, I am Ayush! I am a sophomore majoring in Computer Science & Philosophy. I love reading \
+      and tinkering with random programs. At OSAI I hope to make open source contribution less daunting for \
+      newcomers.',
+    headshot: '/headshots/AyushJain.jpg',
   }
 ];
 
