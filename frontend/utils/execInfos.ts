@@ -48,6 +48,16 @@ const execInfos: ExecInfo[] = [
       soccer, work out, or just spend time with my friends. At OS@I, I hope to grow our collaborative \
       and inclusive community of open-source software development while expanding my own knowledge.",
     headshot: '/headshots/Alberto.jpeg',
+  },
+  {
+    name: 'Yoshee Jain',
+    email: 'yosheej2@illinois.edu',
+    designation: 'OpenDev Co-Director',
+    bio: "Hi! I'm Yoshee, a sophomore majoring in computer science. A few of my favorite things include dancing, \
+    writing poems, sipping coffee, and hanging out with friends and family! At OS@I, I'm really excited to introduce \
+    more individuals to the world of open-source technologies to build a friendly and supportive community where we can \
+    all learn and benefit from the rapidly growing world of open source tools.",
+    headshot: '/headshots/Yoshee.jpg',
   }
 ];
 
