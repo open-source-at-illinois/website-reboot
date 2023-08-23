@@ -39,6 +39,14 @@ const execInfos: ExecInfo[] = [
       and tinkering with random programs. At OSAI I hope to make open source contribution less daunting for \
       newcomers.',
     headshot: '/headshots/AyushJain.jpeg',
+  },
+  {
+    name: 'Pranav Yandamuri', 
+    email: 'pyanda2@illinois.edu',
+    designation: 'OpenDev Lead',
+    bio: 'Hi, I am Pranav, an incoming computer science graduate student (MCS). I love rock climbing, basketball, playing \
+      piano, and cooking (when I have the time). I am hyped to lead the AI/ML project this semester and garner interest in OS@I!!',
+    headshot: '/headshots/PranavYandamuri.jpeg',
   }
 ];
 
