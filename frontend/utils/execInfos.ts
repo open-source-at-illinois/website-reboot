@@ -46,7 +46,7 @@ const execInfos: ExecInfo[] = [
     designation: 'OpenDev Lead',
     bio: 'Hi, I am Pranav, an incoming computer science graduate student (MCS). I love rock climbing, basketball, playing \
       piano, and cooking (when I have the time). I am hyped to lead the AI/ML project this semester and garner interest in OS@I!!',
-    headshot: '/headshots/PranavYandamuri.jpeg',
+    headshot: '/headshots/PranavYandamuri.png',
   }
 ];
 
