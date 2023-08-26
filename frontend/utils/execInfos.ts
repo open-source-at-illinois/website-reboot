@@ -58,6 +58,15 @@ const execInfos: ExecInfo[] = [
     more individuals to the world of open-source technologies to build a friendly and supportive community where we can \
     all learn and benefit from the rapidly growing world of open source tools.",
     headshot: '/headshots/Yoshee.jpg',
+  },
+  {
+    name: 'Abhinav Garg',
+    email: 'ag90@illinois.edu',
+    designation: 'OpenDev Co-Director',
+    bio: "Hey I Abhinav, a sophomore in Computer Engineering. I love gaming, basketball and love learning more about computers. \
+    I have worked with everything, including IOT projects, full-stack web applications and realtime applications as well. \
+    I look forward to making OpenDev a fun entry point into the world of open source.",
+    headshot: '/headshots/Abhinav_Garg.jpg'
   }
 ];
 
