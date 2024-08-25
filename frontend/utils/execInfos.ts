@@ -30,9 +30,9 @@ const execInfos: ExecInfo[] = [
       excited to be a part of Open Source at Illinois this fall, \
       and I can't wait to get started!",
     headshot: '/headshots/prakhar.jpg',
-  }, 
+  },
   {
-    name: 'Ayush Jain', 
+    name: 'Ayush Jain',
     email: 'ayush9@illinois.edu',
     designation: 'External Director',
     bio: 'Hello, I am Ayush! I am a sophomore majoring in Computer Science & Philosophy. I love reading \
@@ -63,11 +63,11 @@ const execInfos: ExecInfo[] = [
     name: 'Abhinav Garg',
     email: 'ag90@illinois.edu',
     designation: 'OpenDev Co-Director',
-    bio: "Hey I Abhinav, a sophomore in Computer Engineering. I love gaming, basketball and love learning more about computers. \
+    bio: 'Hey I Abhinav, a sophomore in Computer Engineering. I love gaming, basketball and love learning more about computers. \
     I have worked with everything, including IOT projects, full-stack web applications and realtime applications as well. \
-    I look forward to making OpenDev a fun entry point into the world of open source.",
-    headshot: '/headshots/Abhinav_Garg.jpg'
-  }
+    I look forward to making OpenDev a fun entry point into the world of open source.',
+    headshot: '/headshots/Abhinav_Garg.jpg',
+  },
 ];
 
 export default execInfos;

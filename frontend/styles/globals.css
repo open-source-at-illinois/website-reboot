@@ -3,21 +3,21 @@
 @tailwind utilities;
 
 .fluid-gradient {
-	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-	background-size: 150% 150%;
-	animation: gradient 6s ease infinite;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 150% 150%;
+  animation: gradient 6s ease infinite;
 }
 
 @keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .rear-info-bg {
@@ -30,8 +30,8 @@
 }
 
 .hacktoberfest-bg {
-  background: url('../public/pictures/hacktoberfest.png') no-repeat
-    center center fixed;
+  background: url('../public/pictures/hacktoberfest.png') no-repeat center
+    center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;

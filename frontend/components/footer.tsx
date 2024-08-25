@@ -36,11 +36,6 @@ const Footer = () => {
                 <a href='/calendar'>Calendar</a>
               </li>
               <li>
-                <a href='https://illinois.campuslabs.com/engage/organization/open-source-at-illinois'>
-                  Campus Labs
-                </a>
-              </li>
-              <li>
                 <a href='https://github.com/open-source-at-illinois'>Github</a>
               </li>
               <li>
@@ -79,18 +74,13 @@ const Footer = () => {
                   opensourceillinois (at) gmail.com
                 </a>
               </li>
-              <li>
-                <a href='mailto:&#111;&#115;&#097;&#105;&#045;&#101;&#120;&#101;&#099;&#064;&#108;&#105;&#115;&#116;&#115;&#046;&#105;&#108;&#108;&#105;&#110;&#111;&#105;&#115;&#046;&#101;&#100;&#117;'>
-                  osai-exec (at) lists.illinois.edu
-                </a>
-              </li>
               <li>or reach out via Discord!</li>
             </ul>
           </div>
         </div>
       </div>
       <div className='text-sm text-center mt-5'>
-        <div>Copyright 2022 Open-Source @ Illinois</div>
+        <div>Copyright 2024 Open-Source @ Illinois</div>
         <div>
           Illustrations by <PageLink href='https://undraw.co/'>Undraw</PageLink>
         </div>

@@ -55,18 +55,13 @@ const Home: NextPage = () => {
             <h3 className='text-2xl font-bold my-4 '>
               Make an impact in the Illinois community
             </h3>
-            <p>Interest Form and OpenDev Applications for Fall 2023 open now</p>
+            <p>Interest Form for Fall 2024 open now</p>
 
             <div className='flex flex-col md:flex-row gap-5 my-4 md:justify-center items-center align-center w-full'>
               <a
                 className='flex text-white bg-primary-lightBlue hover:bg-primary-darkBlue duration-300 w-fit rounded-lg items-center p-2 px-3'
-                href='https://forms.gle/LwzGDr3zfU9ZRBFf9'>
+                href='https://forms.gle/r6Mvsy6ctgc5jrLY6'>
                 Interest Form
-              </a>
-              <a
-                className='flex text-white bg-primary-lightBlue hover:bg-primary-darkBlue duration-300 w-fit rounded-lg items-center p-2 px-3'
-                href='https://forms.gle/jvBWRR28UuE7rvmJ9'>
-                OpenDev Application
               </a>
               {/* <a
                 className='flex text-white bg-primary-lightBlue hover:bg-primary-darkBlue duration-300 rounded-lg items-center p-2 px-3'
@@ -78,7 +73,7 @@ const Home: NextPage = () => {
         </section>
 
         {/* Hero section */}
-        <section className='flex flex-col-reverse gap-10 md:flex-row items-center md:mx-10 mb-5 px-5 pb-5'>
+        <section className='flex flex-col-reverse gap-10 md:flex-row items-center md:mx-10 mb-5 px-5 py-5'>
           <div className='justify-center p-5'>
             <Image
               className='h-40'
@@ -112,11 +107,17 @@ const Home: NextPage = () => {
               traffic signals and everything in between.
             </p> */}
             <p className='my-1'>
-              At Open-Source @ Illinois, our primary focus is empowering developers and engineers, enabling them to actively contribute to the tools they rely on.
-              By embracing open-source principles, we aim to cultivate a culture where members freely share ideas, expertise, maintain shared resources, and drive the development of impactful projects that benefit the wider community.
+              At Open-Source @ Illinois, our primary focus is empowering
+              developers and engineers, enabling them to actively contribute to
+              the tools they rely on. By embracing open-source principles, we
+              aim to cultivate a culture where members freely share ideas,
+              expertise, maintain shared resources, and drive the development of
+              impactful projects that benefit the wider community.
             </p>
             <p className='my-1'>
-              Our mission is to democratize access to knowledge and technology, fostering a collaborative environment that celebrates collective intelligence and leaves a lasting impact.
+              Our mission is to democratize access to knowledge and technology,
+              fostering a collaborative environment that celebrates collective
+              intelligence and leaves a lasting impact.
             </p>
             <div className='flex flex-row gap-5 my-4 justify-center md:justify-start w-full'>
               <DiscordButton />

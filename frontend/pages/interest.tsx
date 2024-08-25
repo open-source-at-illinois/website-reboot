@@ -5,7 +5,7 @@ const Interest = () => {
     <div className='h-full overflow-x-auto'>
       <iframe
         className='mx-auto'
-        src='https://forms.gle/LwzGDr3zfU9ZRBFf9'
+        src='https://forms.gle/r6Mvsy6ctgc5jrLY6'
         width='500'
         height='800'>
         <Loading />
