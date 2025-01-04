@@ -16,9 +16,9 @@ jobs:
     - name: Copy repository contents via scp
       uses: appleboy/scp-action@master
       with:
-        HOST: ${{ secrets.HOST }}
-        USERNAME: ${{ secrets.USERNAME }}
-        KEY: ${{ secrets.SSHKEY }}
+        host: ${{ secrets.HOST }}
+        username: ${{ secrets.USERNAME }}
+        key: ${{ secrets.SSHKEY }}
         source: "."
         target: "/osai-website/website-reboot"
 
@@ -26,8 +26,8 @@ jobs:
       uses: appleboy/ssh-action@master
       with:
         host: ${{ secrets.HOST }}
-        USERNAME: ${{ secrets.USERNAME }}
-        KEY: ${{ secrets.SSHKEY }}
+        username: ${{ secrets.USERNAME }}
+        key: ${{ secrets.SSHKEY }}
         script: |
           cd /osai-website/website-reboot/frontend
           export NVM_DIR=~/.nvm
