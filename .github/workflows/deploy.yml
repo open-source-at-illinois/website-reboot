@@ -20,7 +20,7 @@ jobs:
         username: ${{ secrets.USERNAME }}
         password: ${{ secrets.PASSWORD }}
         source: "."
-        target: "/osai-website/website-reboot"
+        target: "~/website-reboot"
 
     - name: Executing remote commands
       uses: appleboy/ssh-action@master
@@ -29,7 +29,7 @@ jobs:
         username: ${{ secrets.USERNAME }}
         password: ${{ secrets.PASSWORD }}
         script: |
-          cd /osai-website/website-reboot/frontend
+          cd ~/website-reboot/frontend
           export NVM_DIR=~/.nvm
           source ~/.nvm/nvm.sh
           yarn && yarn build
