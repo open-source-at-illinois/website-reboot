@@ -9,7 +9,6 @@ export interface ExecInfo {
   name: string;
   email: string;
   designation: string;
-  bio: string;
   headshot: string;
 }
 
@@ -40,15 +39,14 @@ const About: NextPage = () => {
             </p>
           </div>
         </section>
-        <section className='flex flex-col items-center mb-8'>
-          <h3 className='text-center text-2xl font-medium mb-5'>
+        <h3 className='text-center text-2xl font-medium mb-5'>
             Meet the Team
           </h3>
+        <section className='grid md:grid-cols-3 mb-8 grid-cols-1'>
+          
           {execInfos.map((exec, index) => (
             <div
-              className={`flex flex-col my-5 md:flex-row${
-                index % 2 == 0 ? '' : '-reverse'
-              } gap-16`}>
+              className={`flex flex-col my-5 `}>
               <a href={`mailto:${exec.email}`} className='mx-auto'>
                 <Image
                   className='rounded-full'
@@ -58,14 +56,11 @@ const About: NextPage = () => {
                 />
               </a>
               <p
-                className={`px-8 text-center ${
-                  index % 2 == 0 ? 'md:text-left' : 'md:text-right'
-                }`}>
+                className={`px-8 text-center`}>
                 <h3 className='text-xl'>{exec.name}</h3>
                 <h3 className='text-lg text-gray-500 mb-4'>
                   {exec.designation}
                 </h3>
-                <p className='md:max-w-xl text-justify'>{exec.bio}</p>
               </p>
             </div>
           ))}
