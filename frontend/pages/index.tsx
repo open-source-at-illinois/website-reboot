@@ -55,12 +55,12 @@ const Home: NextPage = () => {
             <h3 className='text-2xl font-bold my-4 '>
               Make an impact in the Illinois community
             </h3>
-            <p>Interest Form for Fall 2024 open now</p>
+            <p>Interest Form for Spring 2025 open now</p>
 
             <div className='flex flex-col md:flex-row gap-5 my-4 md:justify-center items-center align-center w-full'>
               <a
                 className='flex text-white bg-primary-lightBlue hover:bg-primary-darkBlue duration-300 w-fit rounded-lg items-center p-2 px-3'
-                href='https://forms.gle/r6Mvsy6ctgc5jrLY6'>
+                href='https://forms.gle/zZt4jVwKPS5jxMf2A'>
                 Interest Form
               </a>
               {/* <a
